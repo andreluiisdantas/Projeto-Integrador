@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar*/
+.Navbar{
+    height: 85px;
+    background-color: #25392F;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+.Logo{
+    height: 70px;
+}
+
+.Container-Pesquisa{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Barra-Pesquisa {
+    background-color: #F4F1ED;
+    border: none;
+    border-radius: 6px;
+    width: 445px;
+    height: 46px;
+    padding: 0 18px 0 15px;
+    font-size: 16px;
+    color: #25392F;
+}
+
+.Barra-Pesquisa::placeholder {
+    color: #25392F;
+}
+
+.bi-search {
+    position: absolute;
+    right: 15px;
+    color: #25392F;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.Links{
+    text-decoration: none;
+    font-family: "Lexend Deca", sans-serif;
+    color: #F4F1ED;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.Links:hover{
+    color: #FCA311;
+}
+
+.Icones-Links:hover{
+    color: #FCA311;
+}
+
+
