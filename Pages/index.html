@@ -9,23 +9,65 @@
 </head>
 <body>
     <header>
-        <nav class="Navbar">
-            <a href="index.html"><img class="Logo" src="../Images/Logo.svg" alt="Logo"></img></a>
-            <form class="Container-Pesquisa" role="pesquisa" aria-label="Busca no site">
-                <i class="bi bi-search"></i>
-                <input class="Barra-Pesquisa" type="text" placeholder="Buscar itens..." aria-label="Buscar">
-            </form>
-            <a class="Links" href="index.html">Tela inicial</a>
-            <a class="Links" href="produtos.html">Produtos</a>
-            <a class="Links" href="pedidos.html">Pedidos</a>
-            <a class="Links" href="sobre-nos.html">Sobre nós</a>
-            <a class="Icones-Links"><img src="../Images/Icone Carrinho.svg" alt="Carrinho de Compras"></img></a>
-            <a class="Icones-Links"><img src="../Images/Icone Usuario.svg" alt="Perfil Usuario"></img></a>
+        <nav class="navbar">
+            <a href="index.html">
+                <img class="logo" src="../Images/Logo.svg" alt="Logo">
+            </a>
+            <article class="menu-direito">
+                <form class="container-pesquisa" role="search" aria-label="Busca no site">
+                    <i class="bi bi-search"></i>
+                    <input class="barra-pesquisa" type="text" placeholder="Buscar itens...">
+                </form>
+                <ul class="menu-links">
+                    <li><a class="links" href="index.html">Tela inicial</a></li>
+                    <li><a class="links" href="produtos.html">Produtos</a></li>
+                    <li><a class="links" href="pedidos.html">Pedidos</a></li>
+                    <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
+                </ul>
+                <div class="icones">
+                    <a class="icones-links" href="#"><img src="../Images/Icone Carrinho.svg" alt="Carrinho de Compras"></a>
+                    <a class="icones-links" href="#"><img src="../Images/Icone Usuario.svg" alt="Perfil do Usuário"></a>
+                </div>
+            </article>
         </nav>
-        
-        
     </header>
-    <main></main>
+
+    <main>
+        <section class="Banner">
+            <img class="Banner-Home" src="../Images/Banner-Home.svg" alt="Imagem de homem com uma mochila de acampamento"></img>
+            <article class="Titulo-Banner">
+                <h1>Sobrevivência e Camping</h1>
+                <a class="Botao-Banner" href="produtos.html">COMPRAR</a>
+            </article>
+        </section>
+
+        <section class="Categorias">
+            <h2>Destaque de categorias</h2>
+            <article class="Itens-Categorias">
+                <div class="Categorias-Esquerda">
+                    <figure>
+                        <img class="Categoria-Mochilas" src="../Images/Mochilas_Acampamento.svg" alt="Mochilas de acampamento"></img>
+                    </figure>
+                </div>
+                <div class="Categorias-Direita">
+                    <div class="Categorias-Pequenas">
+                        <figure>
+                            <img class="Lanternas" src="../Images/Lanternas.svg" alt="Lanternas"></img>
+                        </figure>
+                        <figure>
+                            <img class="Garrafas" src="../Images/Garrafas.svg" alt="Garrafas"></img>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img class="Barracas" src="../Images/Barracas.svg" alt="Barracas"></img>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
     <footer></footer>
 </body>
 </html>
