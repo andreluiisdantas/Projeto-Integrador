@@ -3,71 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
     <link rel="stylesheet" href="../Style/Style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Projeto Integrador</title>
 </head>
 <body>
-    <header>
+
+    <header class="header">
         <nav class="navbar">
-            <a href="index.html">
-                <img class="logo" src="../Images/Logo.svg" alt="Logo">
+            <a href="index.html" aria-label="Página Inicial">
+                <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa">
             </a>
-            <article class="menu-direito">
-                <form class="container-pesquisa" role="search" aria-label="Busca no site">
-                    <i class="bi bi-search"></i>
-                    <input class="barra-pesquisa" type="text" placeholder="Buscar itens...">
+
+            <div class="menu-direito">
+                <form class="container-pesquisa" role="search">
+                    <label for="search-input" class="sr-only">Buscar itens</label>
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <input class="barra-pesquisa" id="search-input" type="search" placeholder="Buscar itens...">
                 </form>
+
                 <ul class="menu-links">
                     <li><a class="links" href="index.html">Tela inicial</a></li>
                     <li><a class="links" href="produtos.html">Produtos</a></li>
                     <li><a class="links" href="pedidos.html">Pedidos</a></li>
                     <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
                 </ul>
+
                 <div class="icones">
-                    <a class="icones-links" href="#"><img src="../Images/Icone Carrinho.svg" alt="Carrinho de Compras"></a>
-                    <a class="icones-links" href="#"><img src="../Images/Icone Usuario.svg" alt="Perfil do Usuário"></a>
+                    <a class="icones-links" href="#" aria-label="Carrinho de Compras">
+                        <img src="../Images/Icone Carrinho.svg" alt="">
+                    </a>
+                    <a class="icones-links" href="#" aria-label="Perfil do Usuário">
+                        <img src="../Images/Icone Usuario.svg" alt="">
+                    </a>
                 </div>
-            </article>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="Banner">
-            <img class="Banner-Home" src="../Images/Banner-Home.svg" alt="Imagem de homem com uma mochila de acampamento"></img>
-            <article class="Titulo-Banner">
+        <section class="banner">
+            <img class="banner-home" src="../Images/Banner-Home.png" alt="Homem com uma mochila de acampamento olhando para uma paisagem montanhosa.">
+            <div class="titulo-banner">
                 <h1>Sobrevivência e Camping</h1>
-                <a class="Botao-Banner" href="produtos.html">COMPRAR</a>
-            </article>
+                <a class="botao-banner" href="produtos.html">COMPRAR</a>
+            </div>
         </section>
 
-        <section class="Categorias">
+        <section class="categorias">
             <h2>Destaque de categorias</h2>
-            <article class="Itens-Categorias">
-                <div class="Categorias-Esquerda">
+            <div class="itens-categorias">
+                <div class="categorias-esquerda">
                     <figure>
-                        <img class="Categoria-Mochilas" src="../Images/Mochilas_Acampamento.svg" alt="Mochilas de acampamento"></img>
+                        <a href="produtos.html">
+                            <img class="categoria-mochilas" src="../Images/Mochilas_Acampamento.png" alt="Duas mochilas de acampamento apoiadas em uma rocha.">
+                            <figcaption class="sr-only">Categoria Mochilas</figcaption>
+                        </a>
                     </figure>
                 </div>
-                <div class="Categorias-Direita">
-                    <div class="Categorias-Pequenas">
+                <div class="categorias-direita">
+                    <div class="categorias-pequenas">
                         <figure>
-                            <img class="Lanternas" src="../Images/Lanternas.svg" alt="Lanternas"></img>
+                            <a href="produtos.html">
+                                <img class="lanternas" src="../Images/Lanternas.png" alt="Coleção de lanternas de cabeça e de mão.">
+                                <figcaption class="sr-only">Categoria Lanternas</figcaption>
+                            </a>
                         </figure>
                         <figure>
-                            <img class="Garrafas" src="../Images/Garrafas.svg" alt="Garrafas"></img>
+                            <a href="produtos.html">
+                                <img class="garrafas" src="../Images/Garrafas.png" alt="Diversas garrafas térmicas de metal.">
+                                <figcaption class="sr-only">Categoria Garrafas</figcaption>
+                            </a>
                         </figure>
                     </div>
                     <div>
                         <figure>
-                            <img class="Barracas" src="../Images/Barracas.svg" alt="Barracas"></img>
+                            <a href="produtos.html">
+                                <img class="barracas" src="../Images/Barracas.png" alt="Barraca de acampamento montada na floresta.">
+                                <figcaption class="sr-only">Categoria Barracas</figcaption>
+                            </a>
                         </figure>
                     </div>
                 </div>
-            </article>
+            </div>
+            <div class="ver-todos">
+                <a href="produtos.html">Ver todos</a>
+            </div>
+        </section>
+
+        <section class="ofertas">
+             <h2>Ofertas da semana</h2>
+            <div class="todas-ofertas">
+                <article class="card-oferta">
+                    <div class="destaque-oferta"><p>Oferta</p></div>
+                    <figure>
+                        <a href="produtos.html">
+                            <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
+                            <figcaption class="sr-only">Categoria Barracas</figcaption>
+                        </a>
+                    </figure>
+                    <div class="informacoes">
+                        <p class="marca">Forclaz</p>
+                        <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
+                        <div class="valores-produto">
+                            <p class="preco-atual">R$ 650,00</p>
+                            <p class="preco-antigo">R$ 750,00</p>
+                        </div>
+                        <a href="#" class="botao-compra">COMPRAR</a>
+                    </div>
+                </article>
+                <article class="card-oferta">
+                    <div class="destaque-oferta"><p>Oferta</p></div>
+                    <figure>
+                        <a href="produtos.html">
+                            <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
+                            <figcaption class="sr-only">Categoria Barracas</figcaption>
+                        </a>
+                    </figure>
+                    <div class="informacoes">
+                        <p class="marca">Forclaz</p>
+                        <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
+                        <div class="valores-produto">
+                            <p class="preco-atual">R$ 650,00</p>
+                            <p class="preco-antigo">R$ 750,00</p>
+                        </div>
+                        <a href="#" class="botao-compra">COMPRAR</a>
+                    </div>
+                </article>
+                <article class="card-oferta">
+                    <div class="destaque-oferta"><p>Oferta</p></div>
+                    <figure>
+                        <a href="produtos.html">
+                            <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
+                            <figcaption class="sr-only">Categoria Barracas</figcaption>
+                        </a>
+                    </figure>
+                    <div class="informacoes">
+                        <p class="marca">Forclaz</p>
+                        <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
+                        <div class="valores-produto">
+                            <p class="preco-atual">R$ 650,00</p>
+                            <p class="preco-antigo">R$ 750,00</p>
+                        </div>
+                        <a href="#" class="botao-compra">COMPRAR</a>
+                    </div>
+                </article>
+                <article class="card-oferta">
+                    <div class="destaque-oferta"><p>Oferta</p></div>
+                    <figure>
+                        <a href="produtos.html">
+                            <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
+                            <figcaption class="sr-only">Categoria Barracas</figcaption>
+                        </a>
+                    </figure>
+                    <div class="informacoes">
+                        <p class="marca">Forclaz</p>
+                        <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
+                        <div class="valores-produto">
+                            <p class="preco-atual">R$ 650,00</p>
+                            <p class="preco-antigo">R$ 750,00</p>
+                        </div>
+                        <a href="#" class="botao-compra">COMPRAR</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        </footer>
+
 </body>
 </html>

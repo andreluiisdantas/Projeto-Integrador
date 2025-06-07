@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
+/* ==========================================================================
+   1. Estilos Globais e Reset
+   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
@@ -10,6 +15,23 @@ body {
     background: linear-gradient(to bottom, #2F4A3A 0%, #294133 75%, #22372B 100%);
     color: #25392F;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+/* ==========================================================================
+   2. Cabeçalho (Header)
+   ========================================================================== */
 
 .navbar {
     height: 85px;
@@ -43,7 +65,7 @@ body {
     border-radius: 6px;
     width: 100%;
     height: 46px;
-    padding: 0 18px 0 15px;
+    padding: 0 40px 0 15px; 
     font-size: 16px;
     color: #25392F;
 }
@@ -87,91 +109,233 @@ body {
 
 .icones-links img {
     width: 45px;
+    display: block;
 }
 
-/*Banner Home*/
-section {
-  margin-bottom: 0;
-  margin-top: 0;
+
+/* ==========================================================================
+   3. Conteúdo Principal (Main)
+   ========================================================================== */
+
+
+.banner {
+    position: relative; 
+    line-height: 0;
 }
 
-.Banner-Home{
+.banner-home {
     width: 100%;
+    height: auto;
 }
 
-.Titulo-Banner{
+.titulo-banner {
     position: absolute;
     top: 50%;
     left: 5vw;
     width: 30%;
+    transform: translateY(-50%); 
 }
 
-.Banner h1{
-    font-family: "Lexend Deca", sans-serif;
+.titulo-banner h1 {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 400;
     color: #F4F1ED;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
-.Botao-Banner{
+.botao-banner {
+    display: inline-block;
     text-decoration: none;
     border: none;
     border-radius: 12px;
-    padding: 17px 40px;
+    padding: 30px 40px;
     background-color: #25392F;
     color: #F4F1ED;
-    font-family: "Lexend Deca", sans-serif;
     font-size: 25px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
 }
 
-.Botao-Banner:hover{
+.botao-banner:hover {
     background-color: #3A594A;
 }
 
-/*Destaque de categorias*/
-.Categorias{
+.categorias {
     width: 100%;
+    padding: 66px 46px;
+    box-sizing: border-box;
 }
 
-.Categorias h2{
+.categorias h2 {
     color: #F4F1ED;
     font-size: 40px;
     font-weight: 400;
-    padding: 66px 46px;
+    margin-bottom: 20px;
 }
 
-.Itens-Categorias{
+.itens-categorias {
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 100%;
+}
+
+.categorias-esquerda {
+    width: 48%;
+}
+
+.categorias-direita {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.categorias-pequenas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.categorias a {
+    display: block;
+    line-height: 0; 
+}
+
+.categoria-mochilas,
+.lanternas,
+.garrafas,
+.barracas {
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Categorias-Esquerda{
-    width: 40%;
+.categorias img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-.Categorias-Pequenas{
+.ver-todos {
+    text-align: center;
+    margin-top: 66px;
+}
+
+.ver-todos a {
+    font-weight: 300;
+    text-decoration: underline;
+    color: #F4F1ED;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.ver-todos a:hover {
+    color: #FCA311;
+}
+
+.ofertas {
+    width: 100%;
+    padding: 66px 46px;
+    box-sizing: border-box;
+    background-color: #3A594A;
     display: flex;
+    flex-direction: column;
 }
 
-.Categoria-Mochilas{
-    border-radius: 10px;
-    width: 500px;
+.ofertas h2 {
+    color: #F4F1ED;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
-.Lanternas{
-    border-radius: 10px;
-    height: 250px;
+.todas-ofertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
 }
 
-.Garrafas{
+.card-oferta{
+    width: 302px;
+    padding: 14px 0;
+    background-color: #22372B;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
-    height: 250px;
+    align-items: center;
 }
 
-.Barracas{
-    border-radius: 10px;
-    height: 250px;
+.destaque-oferta{
+    align-self: flex-start;
+    background-color: #FCA311;
+    width: 78px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    left: 17px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    gap: 10px;
+}
+
+.marca{
+    font-weight: 300;
+    color: rgba(244, 241, 237, 0.7);
+    font-size: 19px;
+}
+
+.nome-produto{
+    font-weight: 300;
+    color: #F4F1ED;
+    font-size: 20px;
+}
+
+.valores-produto{
+    display: flex;
+    gap: 15px;
+    color: #F4F1ED;
+    align-items: center;
+}
+
+.preco-atual{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.preco-antigo{
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: line-through;
+}
+
+.botao-compra{
+    background-color: #E36414;
+    text-decoration: none;
+    color: #F4F1ED;
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-compra:hover{
+    background-color: #FCA311;
 }
