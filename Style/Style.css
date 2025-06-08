@@ -13,7 +13,7 @@
 body {
     font-family: "Lexend Deca", sans-serif;
     background: linear-gradient(to bottom, #2F4A3A 0%, #294133 75%, #22372B 100%);
-    color: #25392F;
+    color: #F4F1ED;
 }
 
 .sr-only {
@@ -339,3 +339,114 @@ body {
 .botao-compra:hover{
     background-color: #FCA311;
 }
+
+/*Rodapé*/
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 66px 65px 35px 65px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-rodape{
+    width: 336px;
+}
+
+.lista-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape h3{
+    font-size: 24px;
+}
+
+.lista-links a{
+    color: #F4F1ED;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.lista-links a:hover{
+    color: #FCA311;
+}
+
+.mais-informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.mais-informacoes p{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.form-rodape{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-rodape label{
+    font-size: 20px;
+}
+
+.email-rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-email{
+    color: #25392F;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0 15px;
+    height: 46px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.input-email::placeholder {
+    color: #25392F;
+}
+
+.input-email:focus {
+  outline: none;
+}
+
+.botao-rodape{
+    width: 46px;
+    height: 46px;
+    background-color: #E36414;
+    border: none;
+    border-radius: 6px;
+    color: #F4F1ED;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.botao-rodape:hover{
+    background-color: #FCA311;
+}
+
+.bi-send{
+    font-size: 20px;
+}
+
+.direitos-reservados{
+    text-align: center;
+    font-weight: 200;
+}
+
