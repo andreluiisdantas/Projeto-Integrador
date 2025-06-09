@@ -110,8 +110,13 @@ body {
 .icones-links img {
     width: 45px;
     display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.icones-links img:hover{
+    transform: scale(1.04);
+}
 
 /* ==========================================================================
    3. Conteúdo Principal (Main)
@@ -220,6 +225,18 @@ body {
 .categorias img:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-categorias{
+    color: #F4F1ED;
+    text-decoration: none;
+}
+
+.card-categorias figcaption{
+    position: relative;
+    top: -35px;
+    padding: 0 16px;
+    font-size: 35px;
 }
 
 .ver-todos {
@@ -450,3 +467,21 @@ footer{
     font-weight: 200;
 }
 
+/*TELA SOBRE NÓS*/
+
+.titulo-sobre-nos {
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    width: 30%;
+    transform: translateY(-50%); 
+}
+
+.titulo-sobre-nos h1 {
+    font-size: 96px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #F4F1ED;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}

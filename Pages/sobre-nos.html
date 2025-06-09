@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" aria-label="Página Inicial">
+                <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa">
+            </a>
+
+            <div class="menu-direito">
+                <form class="container-pesquisa" role="search">
+                    <label for="search-input" class="sr-only">Buscar itens</label>
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <input class="barra-pesquisa" id="search-input" type="search" placeholder="Buscar itens...">
+                </form>
+
+                <ul class="menu-links">
+                    <li><a class="links" href="index.html">Tela inicial</a></li>
+                    <li><a class="links" href="produtos.html">Produtos</a></li>
+                    <li><a class="links" href="pedidos.html">Pedidos</a></li>
+                    <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
+                </ul>
+
+                <div class="icones">
+                    <a class="icones-links" href="#" aria-label="Carrinho de Compras">
+                        <img src="../Images/Icone Carrinho.svg" alt="Icone carrinho">
+                    </a>
+                    <a class="icones-links" href="#" aria-label="Perfil do Usuário">
+                        <img src="../Images/Icone Usuario.svg" alt="Icone usuário">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img class="banner-home" src="../Images/Banner-Sobre.png" alt="Homem com uma mochila observando a natureza.">
+            <div class="titulo-sobre-nos">
+                <h1>NOSSA HISTÓRIA</h1>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <article class="rodape">
+            <figure>  
+                <img class="logo-rodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa">
+                <figcaption class="sr-only">Logo Icone</figcaption>       
+            </figure>
+
+            <article class="lista-links">
+                <h3>Links</h3>
+                <a href="#">Tela Incial</a>
+                <a href="#">Produtos</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Categorias</a>
+            </article>
+
+            <article class="lista-links">
+                <h3>Informações</h3>
+                <a href="#">Contato</a>
+                <a href="#">Sobre nós</a>
+            </article>
+
+            <article class="mais-informacoes">
+                <h3>Mais informações</h3>
+                <p>Informe seu e-mail para receber mais informações sobre ofertas.</p>
+                <form class="form-rodape">
+                    <label>E-mail:</label>
+                    <div class="email-rodape">
+                        <input class="input-email" type="text" placeholder="E-mail..." required></input>
+                        <button class="botao-rodape"><i class="bi bi-send"></i></button>
+                    </div>
+                </form>
+            </article>
+
+        </article>
+        <hr></hr>
+        <p class="direitos-reservados">© André Luis Sousa Dantas - Todos os direito reservados</p>
+    </footer>
+
+</body>
+</html>
