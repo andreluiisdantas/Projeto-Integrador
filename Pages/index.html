@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Integrador</title>
+    <title>Wilderness Store</title>
     <link rel="stylesheet" href="../Style/Style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png">
 </head>
 <body>
 
+    <!--============== NavBar ==============-->
     <header class="header">
         <nav class="navbar">
             <a href="index.html" aria-label="Página Inicial">
@@ -17,7 +19,6 @@
 
             <div class="menu-direito">
                 <form class="container-pesquisa" role="search">
-                    <label for="search-input" class="sr-only">Buscar itens</label>
                     <i class="bi bi-search" aria-hidden="true"></i>
                     <input class="barra-pesquisa" id="search-input" type="search" placeholder="Buscar itens...">
                 </form>
@@ -31,10 +32,10 @@
 
                 <div class="icones">
                     <a class="icones-links" href="#" aria-label="Carrinho de Compras">
-                        <img src="../Images/Icone Carrinho.svg" alt="Icone carrinho">
+                        <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho">
                     </a>
                     <a class="icones-links" href="#" aria-label="Perfil do Usuário">
-                        <img src="../Images/Icone Usuario.svg" alt="Icone usuário">
+                        <img src="../Images/Icone-Usuario.svg" alt="Icone usuário">
                     </a>
                 </div>
             </div>
@@ -42,6 +43,7 @@
     </header>
 
     <main>
+        <!--============== Banner - Tela Inicial ==============-->
         <section class="banner">
             <img class="banner-home" src="../Images/Banner-Home.png" alt="Homem com uma mochila de acampamento olhando para uma paisagem montanhosa.">
             <div class="titulo-banner">
@@ -50,39 +52,40 @@
             </div>
         </section>
 
+        <!--============== Container de categorias ==============-->
         <section class="categorias">
             <h2>Destaque de categorias</h2>
             <div class="itens-categorias">
                 <div class="categorias-esquerda">
-                    <figure>
-                        <a href="produtos.html" class="card-categorias">
-                            <img class="categoria-mochilas" src="../Images/Mochilas_Acampamento.png" alt="Duas mochilas de acampamento apoiadas em uma rocha.">
+                    <a href="produtos.html" class="card-categorias">
+                        <figure>
+                            <img class="categoria-mochilas" src="../Images/Mochilas-Acampamento.png" alt="Duas mochilas de acampamento apoiadas em uma rocha.">
                             <figcaption>Mochilas de acampamento</figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
                 <div class="categorias-direita">
                     <div class="categorias-pequenas">
-                        <figure>
-                            <a href="produtos.html" class="card-categorias">
+                        <a href="produtos.html" class="card-categorias">
+                            <figure>
                                 <img class="lanternas" src="../Images/Lanternas.png" alt="Coleção de lanternas de cabeça e de mão.">
                                 <figcaption>Lanternas</figcaption>
-                            </a>
-                        </figure>
-                        <figure>
-                            <a href="produtos.html" class="card-categorias">
+                            </figure>
+                        </a>
+                        <a href="produtos.html" class="card-categorias">
+                            <figure>
                                 <img class="garrafas" src="../Images/Garrafas.png" alt="Diversas garrafas térmicas de metal.">
                                 <figcaption>Garrafas</figcaption>
-                            </a>
-                        </figure>
+                            </figure>
+                        </a>
                     </div>
                     <div>
-                        <figure>
-                            <a href="produtos.html" class="card-categorias">
+                        <a href="produtos.html" class="card-categorias">
+                            <figure>
                                 <img class="barracas" src="../Images/Barracas.png" alt="Barraca de acampamento montada na floresta.">
                                 <figcaption>Barracas</figcaption>
-                            </a>
-                        </figure>
+                            </figure>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -90,18 +93,19 @@
                 <a href="produtos.html">Ver todos</a>
             </div>
         </section>
-
+        
+        <!--============== Container de ofertas ==============-->
         <section class="ofertas">
-             <h2>Ofertas da semana</h2>
+            <h2>Ofertas da semana</h2>
             <div class="todas-ofertas">
+
                 <article class="card-oferta">
                     <div class="destaque-oferta"><p>Oferta</p></div>
-                    <figure>
-                        <a href="produtos.html">
+                    <a href="produtos.html">
+                        <figure>
                             <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
-                            <figcaption class="sr-only">Categoria Barracas</figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                     <div class="informacoes">
                         <p class="marca">Forclaz</p>
                         <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
@@ -112,14 +116,14 @@
                         <a href="#" class="botao-compra">COMPRAR</a>
                     </div>
                 </article>
+
                 <article class="card-oferta">
                     <div class="destaque-oferta"><p>Oferta</p></div>
-                    <figure>
-                        <a href="produtos.html">
+                    <a href="produtos.html">
+                        <figure>
                             <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
-                            <figcaption class="sr-only">Categoria Barracas</figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                     <div class="informacoes">
                         <p class="marca">Forclaz</p>
                         <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
@@ -130,14 +134,14 @@
                         <a href="#" class="botao-compra">COMPRAR</a>
                     </div>
                 </article>
+
                 <article class="card-oferta">
                     <div class="destaque-oferta"><p>Oferta</p></div>
-                    <figure>
-                        <a href="produtos.html">
+                    <a href="produtos.html">
+                        <figure>
                             <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
-                            <figcaption class="sr-only">Categoria Barracas</figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                     <div class="informacoes">
                         <p class="marca">Forclaz</p>
                         <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
@@ -148,14 +152,14 @@
                         <a href="#" class="botao-compra">COMPRAR</a>
                     </div>
                 </article>
+
                 <article class="card-oferta">
                     <div class="destaque-oferta"><p>Oferta</p></div>
-                    <figure>
-                        <a href="produtos.html">
+                    <a href="produtos.html">
+                        <figure>
                             <img class="produto-oferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento">
-                            <figcaption class="sr-only">Categoria Barracas</figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                     <div class="informacoes">
                         <p class="marca">Forclaz</p>
                         <p class="nome-produto">Mochila Trilha 50 litros vermelha</p>
@@ -166,15 +170,16 @@
                         <a href="#" class="botao-compra">COMPRAR</a>
                     </div>
                 </article>
+
             </div>
         </section>
     </main>
 
+    <!--============== Rodapé ==============-->
     <footer>
-        <article class="rodape">
+        <div class="rodape">
             <figure>  
-                <img class="logo-rodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa">
-                <figcaption class="sr-only">Logo Icone</figcaption>       
+                <img class="logo-rodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa">   
             </figure>
 
             <article class="lista-links">
@@ -197,15 +202,15 @@
                 <form class="form-rodape">
                     <label>E-mail:</label>
                     <div class="email-rodape">
-                        <input class="input-email" type="text" placeholder="E-mail..." required></input>
+                        <input class="input-email" type="text" placeholder="E-mail..." required>
                         <button class="botao-rodape"><i class="bi bi-send"></i></button>
                     </div>
                 </form>
             </article>
+        </div>
 
-        </article>
-        <hr></hr>
-        <p class="direitos-reservados">© André Luis Sousa Dantas - Todos os direito reservados</p>
+         <hr></hr>
+        <p class="direitos-reservados">© André Luis Sousa Dantas - Todos os direitos reservados</p>
     </footer>
 
 </body>

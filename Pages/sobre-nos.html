@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Integrador</title>
+    <title>Wilderness Store</title>
     <link rel="stylesheet" href="../Style/Style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png">
 </head>
 <body>
 
+     <!--============== NavBar ==============-->
     <header class="header">
         <nav class="navbar">
             <a href="index.html" aria-label="Página Inicial">
@@ -17,7 +19,6 @@
 
             <div class="menu-direito">
                 <form class="container-pesquisa" role="search">
-                    <label for="search-input" class="sr-only">Buscar itens</label>
                     <i class="bi bi-search" aria-hidden="true"></i>
                     <input class="barra-pesquisa" id="search-input" type="search" placeholder="Buscar itens...">
                 </form>
@@ -31,10 +32,10 @@
 
                 <div class="icones">
                     <a class="icones-links" href="#" aria-label="Carrinho de Compras">
-                        <img src="../Images/Icone Carrinho.svg" alt="Icone carrinho">
+                        <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho">
                     </a>
                     <a class="icones-links" href="#" aria-label="Perfil do Usuário">
-                        <img src="../Images/Icone Usuario.svg" alt="Icone usuário">
+                        <img src="../Images/Icone-Usuario.svg" alt="Icone usuário">
                     </a>
                 </div>
             </div>
@@ -42,16 +43,106 @@
     </header>
 
     <main>
+        <!--============== Banner - Sobre-Nós ==============-->
         <section class="banner">
             <img class="banner-home" src="../Images/Banner-Sobre.png" alt="Homem com uma mochila observando a natureza.">
             <div class="titulo-sobre-nos">
                 <h1>NOSSA HISTÓRIA</h1>
             </div>
         </section>
+        
+        <section class="sobre-nos">
+            <!--============== Container de Quem Somos ==============-->
+            <section class="quem-somos">
+                <h2>Quem Somos</h2>
+                <p>
+                    Somos apaixonados por aventura, natureza e liberdade. Nossa loja nasceu da vontade de conectar pessoas ao ar livre, oferecendo os melhores equipamentos para quem vive ou quer viver experiências únicas em trilhas, acampamentos e situações de sobrevivência.
+                    
+                    Desde o primeiro passo na trilha até os desafios mais extremos, estamos aqui para garantir que você tenha ao seu lado produtos confiáveis, duráveis e testados para resistir às condições mais adversas.
+                </p>
+            </section>
+
+            <hr></hr>
+
+            <!--============== Container de Nossa História ==============-->
+            <section class="nossa-historia">
+                <h2>Nossa História</h2>
+                <p>
+                    Tudo começou com um grupo de amigos que adorava acampar e vivia em busca dos melhores equipamentos. Frustrados com a dificuldade de encontrar produtos de qualidade no Brasil, decidimos abrir nossa própria loja.
+                    
+                    Hoje, somos referência para quem busca viver com mais liberdade, autonomia e segurança em qualquer ambiente natural.
+                </p>
+            </section>
+
+            <hr></hr>
+
+            <!--============== Container de Nossa Missão ==============-->
+            <section class="nossa-missao">
+                <h2>Nossa História</h2>
+                <p>
+                    Proporcionar segurança, praticidade e performance a cada jornada. Acreditamos que o contato com a natureza transforma e queremos tornar cada expedição mais segura, eficiente e inesquecível.
+                </p>
+            </section>
+
+            <hr></hr>
+
+            <!--============== Container de Valores e Princípios ==============-->
+            <section class="valores-e-principios">
+                <h2>Valores e Princípios</h2>
+                <div class="blocos-valores">
+                    <article class="natureza">
+                        <figure>
+                            <img src="../Images/natureza.png"></img>
+                        </figure>
+                        <div class="informacoes-valores">
+                            <h3>Natureza em primeiro lugar</h3>
+                            <p>Respeito a sustentabilidade sempre.</p>
+                        </div>
+                    </article>
+
+                    <article class="qualidade">
+                        <figure>
+                            <img src="../Images/qualidade.png"></img>
+                        </figure>
+                        <div class="informacoes-valores">
+                            <h3>Qualidade Real</h3>
+                            <p>Só vendemos o que confiamos.</p>
+                        </div>
+                    </article>
+
+                    <article class="transparencia">
+                        <figure>
+                            <img src="../Images/transparencia.png"></img>
+                        </figure>
+                        <div class="informacoes-valores">
+                            <h3>Transparência</h3>
+                            <p>Sem enrolação e promessas vazias.</p>
+                        </div>
+                    </article>
+
+                    <article class="aventura">
+                        <figure>
+                            <img src="../Images/aventura.png"></img>
+                        </figure>
+                        <div class="informacoes-valores">
+                            <h3>Vivemos a aventura</h3>
+                            <p>Sabemos porque vivemos.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Container da Frase Motivacional ==============-->
+            <section class="frase-motivacional">
+                <p>Explore. Supere. Conquiste.</p>
+                <h4>Viva sua aventura com a gente.</h4>
+            </section>
+        </section>
     </main>
 
+    <!--============== Rodapé ==============-->
     <footer>
-        <article class="rodape">
+        <div class="rodape">
             <figure>  
                 <img class="logo-rodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa">
                 <figcaption class="sr-only">Logo Icone</figcaption>       
@@ -77,15 +168,15 @@
                 <form class="form-rodape">
                     <label>E-mail:</label>
                     <div class="email-rodape">
-                        <input class="input-email" type="text" placeholder="E-mail..." required></input>
+                        <input class="input-email" type="text" placeholder="E-mail..." required>
                         <button class="botao-rodape"><i class="bi bi-send"></i></button>
                     </div>
                 </form>
             </article>
+        </div>
 
-        </article>
         <hr></hr>
-        <p class="direitos-reservados">© André Luis Sousa Dantas - Todos os direito reservados</p>
+        <p class="direitos-reservados">© André Luis Sousa Dantas - Todos os direitos reservados</p>
     </footer>
 
 </body>

@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-/* ==========================================================================
-   1. Estilos Globais e Reset
-   ========================================================================== */
 
+/* ============== Estilos Globais ============== */
 * {
     margin: 0;
     padding: 0;
@@ -16,23 +14,7 @@ body {
     color: #F4F1ED;
 }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-}
-
-
-/* ==========================================================================
-   2. Cabeçalho (Header)
-   ========================================================================== */
-
+/* ============== NavBar ============== */
 .navbar {
     height: 85px;
     background-color: #25392F;
@@ -114,15 +96,12 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icones-links img:hover{
+.icones-links img:hover {
     transform: scale(1.04);
 }
 
-/* ==========================================================================
-   3. Conteúdo Principal (Main)
-   ========================================================================== */
 
-
+/* ============== Banner ============== */
 .banner {
     position: relative; 
     line-height: 0;
@@ -167,6 +146,8 @@ body {
     background-color: #3A594A;
 }
 
+
+/* ============== Categorias ============== */
 .categorias {
     width: 100%;
     padding: 66px 46px;
@@ -187,12 +168,12 @@ body {
     max-width: 100%;
 }
 
-.categorias-esquerda {
+.categorias-esquerda,
+.categorias-direita {
     width: 48%;
 }
 
 .categorias-direita {
-    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -227,12 +208,12 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-.card-categorias{
+.card-categorias {
     color: #F4F1ED;
     text-decoration: none;
 }
 
-.card-categorias figcaption{
+.card-categorias figcaption {
     position: relative;
     top: -35px;
     padding: 0 16px;
@@ -257,6 +238,8 @@ body {
     color: #FCA311;
 }
 
+
+/* ============== Ofertas ============== */
 .ofertas {
     width: 100%;
     padding: 66px 46px;
@@ -273,7 +256,7 @@ body {
     margin-bottom: 20px;
 }
 
-.todas-ofertas{
+.todas-ofertas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -281,7 +264,7 @@ body {
     row-gap: 24px;
 }
 
-.card-oferta{
+.card-oferta {
     width: 302px;
     padding: 14px 0;
     background-color: #22372B;
@@ -291,7 +274,7 @@ body {
     align-items: center;
 }
 
-.destaque-oferta{
+.destaque-oferta {
     align-self: flex-start;
     background-color: #FCA311;
     width: 78px;
@@ -304,7 +287,7 @@ body {
     left: 17px;
 }
 
-.informacoes{
+.informacoes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,37 +295,37 @@ body {
     gap: 10px;
 }
 
-.marca{
+.marca {
     font-weight: 300;
     color: rgba(244, 241, 237, 0.7);
     font-size: 19px;
 }
 
-.nome-produto{
+.nome-produto {
     font-weight: 300;
     color: #F4F1ED;
     font-size: 20px;
 }
 
-.valores-produto{
+.valores-produto {
     display: flex;
     gap: 15px;
     color: #F4F1ED;
     align-items: center;
 }
 
-.preco-atual{
+.preco-atual {
     font-size: 20px;
     font-weight: 600;
 }
 
-.preco-antigo{
+.preco-antigo {
     font-size: 18px;
     font-weight: 200;
     text-decoration: line-through;
 }
 
-.botao-compra{
+.botao-compra {
     background-color: #E36414;
     text-decoration: none;
     color: #F4F1ED;
@@ -353,79 +336,80 @@ body {
     align-items: center;
 }
 
-.botao-compra:hover{
+.botao-compra:hover {
     background-color: #FCA311;
 }
 
-/*Rodapé*/
-footer{
+
+/* ============== Rodapé ============== */
+footer {
     display: flex;
     flex-direction: column;
     gap: 45px;
     padding: 66px 65px 35px 65px;
 }
 
-.rodape{
+.rodape {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.logo-rodape{
+.logo-rodape {
     width: 336px;
 }
 
-.lista-links{
+.lista-links {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.rodape h3{
+.rodape h3 {
     font-size: 24px;
 }
 
-.lista-links a{
+.lista-links a {
     color: #F4F1ED;
     text-decoration: none;
     font-weight: 200;
     font-size: 20px;
 }
 
-.lista-links a:hover{
+.lista-links a:hover {
     color: #FCA311;
 }
 
-.mais-informacoes{
+.mais-informacoes {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 30%;
 }
 
-.mais-informacoes p{
+.mais-informacoes p {
     font-weight: 200;
     font-size: 20px;
 }
 
-.form-rodape{
+.form-rodape {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.form-rodape label{
+.form-rodape label {
     font-size: 20px;
 }
 
-.email-rodape{
+.email-rodape {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
 }
 
-.input-email{
+.input-email {
     color: #25392F;
     font-size: 20px;
     font-weight: 100;
@@ -441,10 +425,10 @@ footer{
 }
 
 .input-email:focus {
-  outline: none;
+    outline: none;
 }
 
-.botao-rodape{
+.botao-rodape {
     width: 46px;
     height: 46px;
     background-color: #E36414;
@@ -454,21 +438,21 @@ footer{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.botao-rodape:hover{
+.botao-rodape:hover {
     background-color: #FCA311;
 }
 
-.bi-send{
+.bi-send {
     font-size: 20px;
 }
 
-.direitos-reservados{
+.direitos-reservados {
     text-align: center;
     font-weight: 200;
 }
 
-/*TELA SOBRE NÓS*/
 
+/* ============== Tela Sobre Nós ============== */
 .titulo-sobre-nos {
     position: absolute;
     top: 50%;
@@ -484,4 +468,76 @@ footer{
     color: #F4F1ED;
     margin-bottom: 20px;
     line-height: 1.2;
+}
+
+.sobre-nos{
+    padding: 55px 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.sobre-nos h2{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.sobre-nos p{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.quem-somos,
+.nossa-historia,
+.nossa-missao,
+.valores-e-principios{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blocos-valores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+}
+
+.blocos-valores h3{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.blocos-valores p{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.informacoes-valores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.natureza,
+.qualidade,
+.transparencia,
+.aventura{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 49%;
+    padding: 23px 26px;
+    border-radius: 6px;
+    gap: 16px;
+}
+
+.frase-motivacional{
+    text-align: center;
+    margin: 100px 0;
+    position: relative;
+}
+
+.frase-motivacional h4{
+    font-size: 40px;
+    font-weight: 400;
 }
