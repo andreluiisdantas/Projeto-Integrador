@@ -28,20 +28,20 @@ body {
     height: 70px;
 }
 
-.menu-direito {
+.menuDireito {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.container-pesquisa {
+.containerPesquisa {
     position: relative;
     display: flex;
     align-items: center;
     width: 30vw;
 }
 
-.barra-pesquisa {
+.barraPesquisa {
     background-color: #F4F1ED;
     border: none;
     border-radius: 6px;
@@ -52,7 +52,7 @@ body {
     color: #25392F;
 }
 
-.barra-pesquisa::placeholder {
+.barraPesquisa::placeholder {
     color: #25392F;
 }
 
@@ -64,7 +64,7 @@ body {
     pointer-events: none;
 }
 
-.menu-links {
+.menuLinks {
     list-style: none;
     display: flex;
     align-items: center;
@@ -89,14 +89,14 @@ body {
     gap: 15px;
 }
 
-.icones-links img {
+.iconesLinks img {
     width: 45px;
     display: block;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icones-links img:hover {
+.iconesLinks img:hover {
     transform: scale(1.04);
 }
 
@@ -107,12 +107,12 @@ body {
     line-height: 0;
 }
 
-.banner-home {
+.bannerHome {
     width: 100%;
     height: auto;
 }
 
-.titulo-banner {
+.tituloBanner {
     position: absolute;
     top: 50%;
     left: 5vw;
@@ -120,7 +120,7 @@ body {
     transform: translateY(-50%); 
 }
 
-.titulo-banner h1 {
+.tituloBanner h1 {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 400;
@@ -129,7 +129,7 @@ body {
     line-height: 1.2;
 }
 
-.botao-banner {
+.botaoBanner {
     display: inline-block;
     text-decoration: none;
     border: none;
@@ -142,7 +142,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.botao-banner:hover {
+.botaoBanner:hover {
     background-color: #3A594A;
 }
 
@@ -161,26 +161,26 @@ body {
     margin-bottom: 20px;
 }
 
-.itens-categorias {
+.itensCategorias {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     max-width: 100%;
 }
 
-.categorias-esquerda,
-.categorias-direita {
+.categoriasEsquerda,
+.categoriasDireita {
     width: 48%;
 }
 
-.categorias-direita {
+.categoriasDireita {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
 }
 
-.categorias-pequenas {
+.categoriasPequenas {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -191,7 +191,7 @@ body {
     line-height: 0; 
 }
 
-.categoria-mochilas,
+.categoriaMochilas,
 .lanternas,
 .garrafas,
 .barracas {
@@ -208,24 +208,24 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-.card-categorias {
+.cardCategorias {
     color: #F4F1ED;
     text-decoration: none;
 }
 
-.card-categorias figcaption {
+.cardCategorias figcaption {
     position: relative;
     top: -35px;
     padding: 0 16px;
     font-size: 35px;
 }
 
-.ver-todos {
+.verTodos {
     text-align: center;
     margin-top: 66px;
 }
 
-.ver-todos a {
+.verTodos a {
     font-weight: 300;
     text-decoration: underline;
     color: #F4F1ED;
@@ -234,7 +234,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.ver-todos a:hover {
+.verTodos a:hover {
     color: #FCA311;
 }
 
@@ -256,7 +256,7 @@ body {
     margin-bottom: 20px;
 }
 
-.todas-ofertas {
+.todasOfertas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -264,7 +264,7 @@ body {
     row-gap: 24px;
 }
 
-.card-oferta {
+.cardOferta {
     width: 302px;
     padding: 14px 0;
     background-color: #22372B;
@@ -274,7 +274,7 @@ body {
     align-items: center;
 }
 
-.destaque-oferta {
+.destaqueOferta {
     align-self: flex-start;
     background-color: #FCA311;
     width: 78px;
@@ -301,31 +301,31 @@ body {
     font-size: 19px;
 }
 
-.nome-produto {
+.nomeProduto {
     font-weight: 300;
     color: #F4F1ED;
     font-size: 20px;
 }
 
-.valores-produto {
+.valoresProduto {
     display: flex;
     gap: 15px;
     color: #F4F1ED;
     align-items: center;
 }
 
-.preco-atual {
+.precoAtual {
     font-size: 20px;
     font-weight: 600;
 }
 
-.preco-antigo {
+.precoAntigo {
     font-size: 18px;
     font-weight: 200;
     text-decoration: line-through;
 }
 
-.botao-compra {
+.botaoCompra {
     background-color: #E36414;
     text-decoration: none;
     color: #F4F1ED;
@@ -336,7 +336,7 @@ body {
     align-items: center;
 }
 
-.botao-compra:hover {
+.botaoCompra:hover {
     background-color: #FCA311;
 }
 
@@ -355,11 +355,11 @@ footer {
     justify-content: space-between;
 }
 
-.logo-rodape {
+.logoRodape {
     width: 336px;
 }
 
-.lista-links {
+.listaLinks {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -369,47 +369,47 @@ footer {
     font-size: 24px;
 }
 
-.lista-links a {
+.listaLinks a {
     color: #F4F1ED;
     text-decoration: none;
     font-weight: 200;
     font-size: 20px;
 }
 
-.lista-links a:hover {
+.listaLinks a:hover {
     color: #FCA311;
 }
 
-.mais-informacoes {
+.maisInformacoes {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 30%;
 }
 
-.mais-informacoes p {
+.maisInformacoes p {
     font-weight: 200;
     font-size: 20px;
 }
 
-.form-rodape {
+.formRodape {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.form-rodape label {
+.formRodape label {
     font-size: 20px;
 }
 
-.email-rodape {
+.emailRodape {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
 }
 
-.input-email {
+.inputEmail {
     color: #25392F;
     font-size: 20px;
     font-weight: 100;
@@ -420,15 +420,15 @@ footer {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.input-email::placeholder {
+.inputEmail::placeholder {
     color: #25392F;
 }
 
-.input-email:focus {
+.inputEmail:focus {
     outline: none;
 }
 
-.botao-rodape {
+.botaoRodape {
     width: 46px;
     height: 46px;
     background-color: #E36414;
@@ -438,7 +438,7 @@ footer {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.botao-rodape:hover {
+.botaoRodape:hover {
     background-color: #FCA311;
 }
 
@@ -446,14 +446,14 @@ footer {
     font-size: 20px;
 }
 
-.direitos-reservados {
+.direitosReservados {
     text-align: center;
     font-weight: 200;
 }
 
 
 /* ============== Tela Sobre Nós ============== */
-.titulo-sobre-nos {
+.tituloSobreNos {
     position: absolute;
     top: 50%;
     right: 10vw;
@@ -461,7 +461,7 @@ footer {
     transform: translateY(-50%); 
 }
 
-.titulo-sobre-nos h1 {
+.tituloSobreNos h1 {
     font-size: 96px;
     text-transform: uppercase;
     font-weight: 400;
@@ -470,50 +470,50 @@ footer {
     line-height: 1.2;
 }
 
-.sobre-nos{
+.sobreNos{
     padding: 55px 65px;
     display: flex;
     flex-direction: column;
     gap: 54px;
 }
 
-.sobre-nos h2{
+.sobreNos h2{
     font-size: 50px;
     font-weight: 300;
 }
 
-.sobre-nos p{
+.sobreNos p{
     font-size: 30px;
     font-weight: 200;
 }
 
-.quem-somos,
-.nossa-historia,
-.nossa-missao,
-.valores-e-principios{
+.quemSomos,
+.nossaHistoria,
+.nossaMissao,
+.valoresEPrincipios{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.blocos-valores{
+.blocosValores{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 32px;
 }
 
-.blocos-valores h3{
+.blocosValores h3{
     font-size: 35px;
     font-weight: 300;
 }
 
-.blocos-valores p{
+.blocosValores p{
     font-size: 25px;
     font-weight: 200;
 }
 
-.informacoes-valores{
+.informacoesValores{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -531,13 +531,13 @@ footer {
     gap: 16px;
 }
 
-.frase-motivacional{
+.fraseMotivacional{
     text-align: center;
     margin: 100px 0;
     position: relative;
 }
 
-.frase-motivacional h4{
+.fraseMotivacional h4{
     font-size: 40px;
     font-weight: 400;
 }
