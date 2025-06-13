@@ -10,7 +10,7 @@
 
 body {
     font-family: "Lexend Deca", sans-serif;
-    background: linear-gradient(to bottom, #2F4A3A 0%, #294133 75%, #22372B 100%);
+    background: linear-gradient(to right, #2F4A3A 0%, #294133 75%, #22372B 100%);
     color: #F4F1ED;
 }
 
@@ -540,4 +540,43 @@ footer {
 .fraseMotivacional h4{
     font-size: 40px;
     font-weight: 400;
+}
+
+/* ============== Tela Produtos ============== */
+.telaProdutos{
+    padding: 60px 40px;
+}
+
+.telaProdutos h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.filtros h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.blocoFiltros{
+    background-color: #3A594A;
+    backdrop-filter: blur(40px);
+    border-radius: 6px;
+    padding: 15px 20px;
+}
+
+.blocoFiltros h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.itensFiltros{
+    display: flex;
+    flex-direction: column;
 }
