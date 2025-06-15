@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilderness Store</title>
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png">
+</head>
+<body>
+
+    <!--============== NavBar ==============-->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" aria-label="Página Inicial">
+                <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa"></img>
+            </a>
+
+            <div class="menuDireito">
+                <form class="containerPesquisa">
+                    <label for="searchInput">Buscar itens</label>
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens...">
+                </form>
+
+                <ul class="menuLinks">
+                    <li><a class="links" href="index.html">Tela inicial</a></li>
+                    <li><a class="links" href="produtos.html">Produtos</a></li>
+                    <li><a class="links" href="pedidos.html">Pedidos</a></li>
+                    <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
+                </ul>
+
+                <div class="icones">
+                    <a class="iconesLinks" href="#" aria-label="Carrinho de Compras">
+                        <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho"></img>
+                    </a>
+                    <a class="iconesLinks" href="#" aria-label="Perfil do Usuário">
+                        <img src="../Images/Icone-Usuario.svg" alt="Icone usuário"></img>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="telaCarrinho">
+
+            <section class="compras">
+                <h2>Carrinho de compras</h2>
+
+                <table class="tabelaCarrinho">
+                    <thead>
+                        <tr class="cabecalhoTabela">
+                            <th>Produtos</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="itemCarrinho">
+                            <td>
+                                <div class="infoProduto">
+                                    <img src="caminho/para/imagem-mochila.png" alt="Mochila Trilha 50 litros vermelha"></img>
+                                    <p>Mochila Trilha 50 litros vermelha</p>
+                                </div>
+                            </td>
+                            <td class="precoProduto">R$ 650,00</td>
+                            <td>
+                                <div class="seletorQuantidade">
+                                    <input type="number" class="inputQuantidade" value="1" min="1">
+                                </div>
+                            </td>
+                            <td class="subtotalProduto">R$ 650,00</td>
+                            <td>
+                                <button class="botaoRemover" aria-label="Remover item">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                </table>
+            </section>
+
+            <section class="resumoCompras">
+                <h2>Resumo da compra</h2>
+                <div class="caixaResumo">
+                    <div class="linhaResumo">
+                        <p>Subtotal</p>
+                        <p>R$ 650,00</p>
+                    </div>
+                    <p class="infoFrete">Frete grátis para todo o Brasil</p>
+                    <div class="linhaResumo total">
+                        <p>Valor Total:</p>
+                        <p class="valorFinal">R$ 650,00</p>
+                    </div>
+                    <button type="button" class="botaoFinalizar">Finalizar Compra</button>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <!--============== Rodapé ==============-->
+    <footer>
+        <div class="rodape">
+            <figure> 
+                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>  
+            </figure>
+
+            <article class="listaLinks">
+                <h3>Links</h3>
+                <a href="#">Tela Incial</a>
+                <a href="#">Produtos</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Categorias</a>
+            </article>
+
+            <article class="listaLinks">
+                <h3>Informações</h3>
+                <a href="#">Contato</a>
+                <a href="#">Sobre nós</a>
+            </article>
+
+            <article class="maisInformacoes">
+                <h3>Mais informações</h3>
+                <p>Informe seu e-mail para receber mais informações sobre ofertas.</p>
+                <form class="formRodape">
+                    <label for="emailInput">E-mail:</label>
+                    <div class="emailRodape">
+                        <input class="inputEmail" id="emailInput" type="text" placeholder="E-mail..." required>
+                        <button class="botaoRodape"><i class="bi bi-send"></i></button>
+                    </div>
+                </form>
+            </article>
+        </div>
+
+           <hr></hr>
+        <p class="direitosReservados">© André Luis Sousa Dantas - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
