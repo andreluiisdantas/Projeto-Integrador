@@ -755,3 +755,22 @@ textarea::placeholder {
     font-size: 25px;
     font-weight: 200;
 }
+
+/* ============== Tela Estoque ============== */
+.idProduto, 
+.precoProdutoEstoque, 
+.totalEstoqueEstoque{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.nomeProdutoEstoque{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.fotoProduto{
+    width: 110px;
+}
+
+/* ============== Tela Adicionar Estoque ============== */
