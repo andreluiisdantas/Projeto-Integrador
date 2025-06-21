@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilderness Store</title>
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png">
+</head>
+<body>
+
+    <!--============== NavBar ==============-->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" aria-label="Página Inicial">
+                <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa"></img>
+            </a>
+
+            <div class="menuDireito">
+                <form class="containerPesquisa">
+                    <label for="searchInput">Buscar itens</label>
+                    <a href="busca.html">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </a>
+                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens...">
+                </form>
+
+                <ul class="menuLinks">
+                    <li><a class="links" href="index.html">Tela inicial</a></li>
+                    <li><a class="links" href="produtos.html">Produtos</a></li>
+                    <li><a class="links" href="pedidos.html">Pedidos</a></li>
+                    <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
+                </ul>
+
+                <div class="icones">
+                    <a class="iconesLinks" href="carrinho.html" aria-label="Carrinho de Compras">
+                        <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho"></img>
+                    </a>
+                    <a class="iconesLinks" href="perfil.html" aria-label="Perfil do Usuário">
+                        <img src="../Images/Icone-Usuario.svg" alt="Icone usuário"></img>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="telaFinalizarCompra">
+        <aside class="ladoEsquerdo">
+
+            <!--============== Dados de Entrega ==============-->
+            <section class="dadosEntrega">
+                <h2>Dados da entrega</h2>
+                <article>
+                    <div class="dadosHorizontais">
+                        <div class="campoDados">
+                            <label>CEP</label>
+                            <input class="campoMaior" type="number" name="cep" placeholder="CEP..."></input>
+                        </div>
+
+                        <div class="campoDados">
+                            <label>Número</label>
+                            <input class="campoMenor" type="number" name="numero" placeholder="Número..."></input>
+                        </div>
+                    </div> 
+
+                    <div class="campoDados">
+                        <label>Rua</label>
+                        <input type="text" name="rua" placeholder="Nome da rua..."></input>
+                    </div>
+        
+                    <div class="campoDados">
+                        <label>Bairro</label>
+                        <input type="text" name="bairro" placeholder="Nome do bairro..."></input>
+                    </div>
+            
+                    <div class="dadosHorizontais">
+                        <div class="campoDados">
+                            <label>Cidade</label>
+                            <input class="campoMaior" type="text" name="cidade" placeholder="Cidade..."></input>
+                        </div>
+
+                        <div class="campoDados">
+                            <label>Estado</label>
+                            <select name="estado" class="campoMenor">
+                                <option value="" disabled selected>Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div> 
+                </article>
+            </section>
+
+            <!--============== Formas de pagamento ==============-->
+            <section class="formasPagamento">
+                <h2>Formas de pagamento</h2>
+                <article>
+                    <div class="selecionarPagamento">
+                        <fieldset>
+                            <legend>À vista</legend>
+
+                            <label class="opcaoPagamento">
+                                <input type="radio" name="pagamento" value="pix">
+                                <div class="radioVisual"></div>
+                                Pix
+                            </label>
+
+                            <label class="opcaoPagamento">
+                                <input type="radio" name="pagamento" value="boleto">
+                                <div class="radioVisual"></div>
+                                Boleto
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Cartão</legend>
+
+                            <label class="opcaoPagamento">
+                                <input type="radio" name="pagamento" value="credito">
+                                <div class="radioVisual"></div>
+                                Crédito
+                            </label>
+
+                            <label class="opcaoPagamento">
+                                <input type="radio" name="pagamento" value="debito">
+                                <div class="radioVisual"></div>
+                                Débito
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="campoDados">
+                        <label>Nome do titular</label>
+                        <input type="text" name="rua" placeholder="Nome do titular..."></input>
+                    </div>
+
+                    <div class="campoDados">
+                        <label>Número do cartão</label>
+                        <input type="text" name="rua" placeholder="Número do cartão..."></input>
+                    </div>
+
+                    <div class="dadosHorizontais">
+                        <div class="campoDados">
+                            <label>Data</label>
+                            <input class="campoMaior" type="date" name="cep" placeholder="Data"></input>
+                        </div>
+
+                        <div class="campoDados">
+                            <label>Código de segurança</label>
+                            <input class="campoMenor" type="number" name="numero" placeholder="CVV..."></input>
+                        </div>
+                    </div> 
+
+                </article>
+            </section>
+
+        </aside>
+
+        <aside class="ladoDireito">
+            <section class="resumoPedido">
+                <h2>Resumo do pedido</h2>
+                <article>
+                    <div class="itemPedido">
+                        <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha"></img>
+                        <div class="infoItemPedido">
+                            <h3>Mochila Trilha 50 litros</h3>
+                            <p>R$ 650,00</p>
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    <div class="itemPedido">
+                        <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha"></img>
+                        <div class="infoItemPedido">
+                            <h3>Mochila Trilha 50 litros</h3>
+                            <p>R$ 650,00</p>
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    <div class="itemPedido">
+                        <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha"></img>
+                        <div class="infoItemPedido">
+                            <h3>Mochila Trilha 50 litros</h3>
+                            <p>R$ 650,00</p>
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    <div class="itemPedido">
+                        <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha"></img>
+                        <div class="infoItemPedido">
+                            <h3>Mochila Trilha 50 litros</h3>
+                            <p>R$ 650,00</p>
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    <div class="resumoPrecos">
+                        <h4>Subtotal</h4>
+                        <div>
+                            <p>Frete</p>
+                            <p>Grátis</p>
+                        </div>
+                    </div>
+
+                    <hr></hr>
+
+                    <h5>R$ 650,00</h5>
+
+                    <a href="finalizarCompra.html" type="button" class="botaoFinalizarPedido">Finalizar Compra</a>
+                </article>
+            </section>
+        </aside>
+    </main>
+
+    <!--============== Rodapé ==============-->
+    <footer>
+        <div class="rodape">
+            <figure> 
+                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>  
+            </figure>
+
+            <article class="listaLinks">
+                <h3>Links</h3>
+                <a href="#">Tela Incial</a>
+                <a href="#">Produtos</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Categorias</a>
+            </article>
+
+            <article class="listaLinks">
+                <h3>Informações</h3>
+                <a href="#">Contato</a>
+                <a href="#">Sobre nós</a>
+            </article>
+
+            <article class="maisInformacoes">
+                <h3>Mais informações</h3>
+                <p>Informe seu e-mail para receber mais informações sobre ofertas.</p>
+                <form class="formRodape">
+                    <label for="emailInput">E-mail:</label>
+                    <div class="emailRodape">
+                        <input class="inputEmail" id="emailInput" type="text" placeholder="E-mail..." required>
+                        <button class="botaoRodape"><i class="bi bi-send"></i></button>
+                    </div>
+                </form>
+            </article>
+        </div>
+
+           <hr></hr>
+        <p class="direitosReservados">© André Luis Sousa Dantas - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

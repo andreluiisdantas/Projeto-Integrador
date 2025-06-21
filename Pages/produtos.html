@@ -20,7 +20,9 @@
             <div class="menuDireito">
                 <form class="containerPesquisa">
                     <label for="searchInput">Buscar itens</label>
-                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <a href="busca.html">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </a>
                     <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens...">
                 </form>
 
@@ -32,10 +34,10 @@
                 </ul>
 
                 <div class="icones">
-                    <a class="iconesLinks" href="#" aria-label="Carrinho de Compras">
+                    <a class="iconesLinks" href="carrinho.html" aria-label="Carrinho de Compras">
                         <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho"></img>
                     </a>
-                    <a class="iconesLinks" href="#" aria-label="Perfil do Usuário">
+                    <a class="iconesLinks" href="perfil.html" aria-label="Perfil do Usuário">
                         <img src="../Images/Icone-Usuario.svg" alt="Icone usuário"></img>
                     </a>
                 </div>
@@ -43,86 +45,44 @@
         </nav>
     </header>
 
-    <!--============== Container Tela Produtos ==============-->
-    <main class="telaProdutos">
-        <h1>Produtos</h1>
-        <section class="containerProdutos">
+    <main>
+        <!--============== Banner - Tela Inicial ==============-->
+        <section class="banner">
+            <img class="bannerProdutos" src="../Images/Banner-Produtos.png" alt="Homem com uma mochila de acampamento olhando para uma paisagem montanhosa.">
+            <div class="tituloBannerProdutos">
+                <h1>TODOS PRODUTOS</h1>
+            </div>
+        </section>
 
-            <!--============== Container de Filtros ==============-->
-            <aside class="filtros">
-                <h2>Filtrar</h2>
-                <article class="blocoFiltros">
-                    <h3>Categorias</h3>
-                    <div class="itensFiltros">
-                        <label><input type="checkbox" name="categoria" value="barracas"> Barracas</label>
-                        <label><input type="checkbox" name="categoria" value="mochilas"> Mochilas</label>
-                        <label><input type="checkbox" name="categoria" value="lanternas"> Lanternas</label>
-                        <label><input type="checkbox" name="categoria" value="garrafas-termicas"> Garrafas térmicas</label>
-                        <label><input type="checkbox" name="categoria" value="calcados"> Calçados</label>
-                        <label><input type="checkbox" name="categoria" value="fogareiros"> Fogareiros</label>
-                        <label><input type="checkbox" name="categoria" value="sacos-dormir"> Sacos de dormir</label>
-                        <label><input type="checkbox" name="categoria" value="bastoes"> Bastões de caminhada</label>
-                        <label><input type="checkbox" name="categoria" value="cadeiras"> Cadeiras e bancos dobráveis</label>
-                        <label><input type="checkbox" name="categoria" value="organizadores"> Organizadores e bolsas</label>
-                    </div>
-                </article>
-                <article class="blocoFiltros">
-                    <h3>Esportes</h3>
-                    <div class="itensFiltros">
-                        <label><input type="checkbox" name="esporte" value="trekking"> Trekking</label>
-                        <label><input type="checkbox" name="esporte" value="pesca"> Pesca</label>
-                        <label><input type="checkbox" name="esporte" value="acampamento"> Acampamento</label>
-                        <label><input type="checkbox" name="esporte" value="escalada"> Escalada</label>
-                        <label><input type="checkbox" name="esporte" value="montanhismo"> Montanhismo</label>
-                        <label><input type="checkbox" name="esporte" value="ciclismo"> Ciclismo</label>
-                        <label><input type="checkbox" name="esporte" value="trail-running"> Trail running</label>
-                        <label><input type="checkbox" name="esporte" value="sobrevivencialismo"> Sobrevivencialismo</label>
-                    </div>
-                </article>
-                <article class="blocoFiltros">
-                    <h3>Marcas</h3>
-                    <div class="itensFiltros">
-                        <label><input type="checkbox" name="marca" value="forclaz"> Forclaz</label>
-                        <label><input type="checkbox" name="marca" value="quechua"> Quechua</label>
-                        <label><input type="checkbox" name="marca" value="naturehike"> Naturehike</label>
-                        <label><input type="checkbox" name="marca" value="deuter"> Deuter</label>
-                        <label><input type="checkbox" name="marca" value="coleman"> Coleman</label>
-                        <label><input type="checkbox" name="marca" value="the-north-face"> The North Face</label>
-                        <label><input type="checkbox" name="marca" value="nautika"> Nautika</label>
-                        <label><input type="checkbox" name="marca" value="azteq"> Azteq</label>
-                        <label><input type="checkbox" name="marca" value="curtlo"> Curtlo</label>
-                        <label><input type="checkbox" name="marca" value="trilhas-e-rumos"> Trilhas & Rumos</label>
-                    </div>
-                </article>
-                <article class="blocoFiltros">
-                    <h3>Material</h3>
-                    <div class="itensFiltros">
-                        <label><input type="checkbox" name="material" value="nylon"> Nylon</label>
-                        <label><input type="checkbox" name="material" value="poliester"> Poliéster</label>
-                        <label><input type="checkbox" name="material" value="ripstop"> Ripstop</label>
-                        <label><input type="checkbox" name="material" value="impermeavel"> Impermeável</label>
-                        <label><input type="checkbox" name="material" value="couro-sintetico"> Couro sintético</label>
-                    </div>
-                </article>
-                <article class="blocoFiltros">
-                    <h3>Cor</h3>
-                    <div class="itensFiltros">
-                        <label><input type="checkbox" name="cor" value="preto"> Preto</label>
-                        <label><input type="checkbox" name="cor" value="vermelho"> Vermelho</label>
-                        <label><input type="checkbox" name="cor" value="verde"> Verde</label>
-                        <label><input type="checkbox" name="cor" value="azul"> Azul</label>
-                        <label><input type="checkbox" name="cor" value="laranja"> Laranja</label>
-                        <label><input type="checkbox" name="cor" value="cinza"> Cinza</label>
-                        <label><input type="checkbox" name="cor" value="bege"> Bege</label>
-                        <label><input type="checkbox" name="cor" value="roxo"> Roxo</label>
-                    </div>
-                </article>
-            </aside>
+        <!--============== Container - Todas Categorias ==============-->
+        <div class="todasCategorias">
 
-            <!--============== Container de Itens Pesquisados ==============-->
-            <section class="resultadoProdutos">
-                <h2>Resultados para "Mochilas"</h2>
-                <div class="produtos">
+            <!--============== Categoria - Mochilas Acampamento ==============-->
+            <section>
+                <h2>Mochilas Acampamento</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
 
                     <article class="cardProduto">
                         <div class="iconeFavoritos">
@@ -146,7 +106,7 @@
                             <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
                         </div>
                     </article>
-                 
+                    
                     <article class="cardProduto">
                         <div class="iconeFavoritos">
                             <label class="coraçãoFavorito">
@@ -166,7 +126,7 @@
                             <div class="valoresProduto">
                                 <p class="precoAtual">R$ 650,00</p>
                             </div>
-                            <a href="#" class="botaoCompra">COMPRAR</a>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
                         </div>
                     </article>
 
@@ -189,128 +149,796 @@
                             <div class="valoresProduto">
                                 <p class="precoAtual">R$ 650,00</p>
                             </div>
-                            <a href="#" class="botaoCompra">COMPRAR</a>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
                         </div>
                     </article>
-                 
-                    <article class="cardProduto">
-                        <div class="iconeFavoritos">
-                            <label class="coraçãoFavorito">
-                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
-                                <i class="bi bi-suit-heart"></i>
-                                <i class="bi bi-suit-heart-fill"></i>
-                            </label>
-                        </div>
-                        <a href="produtos.html">
-                            <figure>
-                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
-                            </figure>
-                        </a>
-                        <div class="informacoes">
-                            <p class="marca">Forclaz</p>
-                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
-                            <div class="valoresProduto">
-                                <p class="precoAtual">R$ 650,00</p>
-                            </div>
-                            <a href="#" class="botaoCompra">COMPRAR</a>
-                        </div>
-                    </article>
-                    
-                    <article class="cardProduto">
-                        <div class="iconeFavoritos">
-                            <label class="coraçãoFavorito">
-                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
-                                <i class="bi bi-suit-heart"></i>
-                                <i class="bi bi-suit-heart-fill"></i>
-                            </label>
-                        </div>
-                        <a href="produtos.html">
-                            <figure>
-                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
-                            </figure>
-                        </a>
-                        <div class="informacoes">
-                            <p class="marca">Forclaz</p>
-                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
-                            <div class="valoresProduto">
-                                <p class="precoAtual">R$ 650,00</p>
-                            </div>
-                            <a href="#" class="botaoCompra">COMPRAR</a>
-                        </div>
-                    </article>
-                 
-                    <article class="cardProduto">
-                        <div class="iconeFavoritos">
-                            <label class="coraçãoFavorito">
-                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
-                                <i class="bi bi-suit-heart"></i>
-                                <i class="bi bi-suit-heart-fill"></i>
-                            </label>
-                        </div>
-                        <a href="produtos.html">
-                            <figure>
-                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
-                            </figure>
-                        </a>
-                        <div class="informacoes">
-                            <p class="marca">Forclaz</p>
-                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
-                            <div class="valoresProduto">
-                                <p class="precoAtual">R$ 650,00</p>
-                            </div>
-                            <a href="#" class="botaoCompra">COMPRAR</a>
-                        </div>
-                    </article>
-                    
-                    <article class="cardProduto">
-                        <div class="iconeFavoritos">
-                            <label class="coraçãoFavorito">
-                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
-                                <i class="bi bi-suit-heart"></i>
-                                <i class="bi bi-suit-heart-fill"></i>
-                            </label>
-                        </div>
-                        <a href="produtos.html">
-                            <figure>
-                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
-                            </figure>
-                        </a>
-                        <div class="informacoes">
-                            <p class="marca">Forclaz</p>
-                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
-                            <div class="valoresProduto">
-                                <p class="precoAtual">R$ 650,00</p>
-                            </div>
-                            <a href="#" class="botaoCompra">COMPRAR</a>
-                        </div>
-                    </article>
-                 
-                    <article class="cardProduto">
-                        <div class="iconeFavoritos">
-                            <label class="coraçãoFavorito">
-                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
-                                <i class="bi bi-suit-heart"></i>
-                                <i class="bi bi-suit-heart-fill"></i>
-                            </label>
-                        </div>
-                        <a href="produtos.html">
-                            <figure>
-                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
-                            </figure>
-                        </a>
-                        <div class="informacoes">
-                            <p class="marca">Forclaz</p>
-                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
-                            <div class="valoresProduto">
-                                <p class="precoAtual">R$ 650,00</p>
-                            </div>
-                            <a href="#" class="botaoCompra">COMPRAR</a>
-                        </div>
-                    </article>
-
                 </div>
             </section>
-        </section>
+
+            <!--============== Categoria - Lanternas ==============-->
+            <section>
+                <h2>Lanternas</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Categoria - Garrafas Térmicas ==============-->
+            <section>
+                <h2>Garrafas Térmicas</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Categoria - Barracas ==============-->
+            <section>
+                <h2>Barracas</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Categoria - Calçados ==============-->
+            <section>
+                <h2>Calçados</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Categoria - Fogareiros ==============-->
+            <section>
+                <h2>Fogareiros</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Categoria - Sacos de Dormir ==============-->
+            <section>
+                <h2>Sacos de Dormir</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Categoria - Bastões de caminhada ==============-->
+            <section>
+                <h2>Bastões de caminhada</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--============== Categoria - Cadeiras e Bancos Dobráveis ==============-->
+            <section>
+                <h2>Cadeiras e Bancos Dobráveis</h2>
+                <div class="produtosCategorias">
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                    
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+
+                    <article class="cardProduto">
+                        <div class="iconeFavoritos">
+                            <label class="coraçãoFavorito">
+                                <input type="checkbox" class="checkboxFavorito" aria-label="Adicionar aos favoritos"/>
+                                <i class="bi bi-suit-heart"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </label>
+                        </div>
+                        <a href="produtos.html">
+                            <figure>
+                                <img class="produtoOferta" src="../Images/Produto-Mochila_01.png" alt="Mochilas_Acampamento"></img>
+                            </figure>
+                        </a>
+                        <div class="informacoes">
+                            <p class="marca">Forclaz</p>
+                            <h3 class="nomeProduto">Mochila Trilha 50 litros vermelha</h3>
+                            <div class="valoresProduto">
+                                <p class="precoAtual">R$ 650,00</p>
+                            </div>
+                            <a href="./produtosIndividuais/produto1.html" class="botaoCompra">COMPRAR</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!--============== Rodapé ==============-->
