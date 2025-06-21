@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilderness Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../../Images/Logo-Icone.png">
+</head>
+<body>
+
+    <!--============== Cabeçalho ==============-->
+    <header class="cabecalho">
+        <img src="../../Images/logoAdmin.png" alt="Logo Administrador"></img>
+        <h1>Painel Administrador</h1>
+            <div class="icones">
+                <a class="iconesLinks" href="perfilAdmin.html" aria-label="Perfil do Usuário">
+                    <img src="../../Images/Icone-Usuario.svg" alt="Icone usuário"></img>
+                </a>
+            </div>
+    </header>
+
+    <main>
+        <!--============== Barra de Navegação ==============-->
+        <aside class="barraNavegacao">
+            <a href="administrador.html">Dashboard</a>
+            <a href="produtosAdmin.html">Produtos</a>
+            <a href="pedidosAdmin.html" class="telaAtual">Pedidos</a>
+            <a href="estoqueAdmin.html">Estoque</a>
+        </aside>
+
+        <!--============== Tela Pedidos ==============-->
+        <section class="telaPedidos">
+            <h1>Produtos cadastrados</h1>
+            <div class="menuFiltroPedido">
+                <form class="campoFiltro">
+                    <div class="campoDados">
+                        <label>Status</label>
+                        <select name="status">
+                            <option value="" disabled selected>Status</option>
+                            <option value="concluido">Concluído</option>
+                            <option value="pendente">Pendente</option>
+                        </select>
+                    </div>
+                </form>
+
+                <form class="campoFiltro">
+                    <div class="campoDados">
+                        <label>Data</label>
+                        <select name="status">
+                            <option value="" disabled selected>Data</option>
+                            <option value="concluido">Hoje</option>
+                            <option value="pendente">Uma semana</option>
+                            <option value="pendente">Últimos 30 dias</option>
+                            <option value="pendente">Últimos 45 dias</option>
+                            <option value="pendente">Últimos 60 dias</option>
+                            <option value="pendente">Todos</option>
+                        </select>
+                    </div>
+                </form>
+                <a class="botaoAdicionarProduto">Filtrar</a>
+            </div>
+
+            <article class="tabelaProdutosCadastrados">
+                <table class="tabelaCarrinho">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuário</th>
+                            <th>Data</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="itemCarrinho">
+                            <td>
+                                <p class="idCompra">#1234</p>
+                            </td>
+                            <td>
+                                <p class="nomeCliente">André</p>
+                            </td>
+                            <td>
+                                <p class="dataCompra">22/04/2025</p>
+                            </td>
+                            <td>
+                                <p class="statusCompraConcluida">Concluído</p>
+                            </td>
+                            <td>
+                                <p class="totalCompra">R$ 1.000,00</p>
+                            </td>
+                        </tr>
+
+                        <tr class="itemCarrinho">
+                            <td>
+                                <p class="idCompra">#1234</p>
+                            </td>
+                            <td>
+                                <p class="nomeCliente">André</p>
+                            </td>
+                            <td>
+                                <p class="dataCompra">22/04/2025</p>
+                            </td>
+                            <td>
+                                <p class="statusCompraConcluida">Concluído</p>
+                            </td>
+                            <td>
+                                <p class="totalCompra">R$ 1.000,00</p>
+                            </td>
+                        </tr>
+
+                        <tr class="itemCarrinho">
+                            <td>
+                                <p class="idCompra">#1234</p>
+                            </td>
+                            <td>
+                                <p class="nomeCliente">André</p>
+                            </td>
+                            <td>
+                                <p class="dataCompra">22/04/2025</p>
+                            </td>
+                            <td>
+                                <p class="statusCompraConcluida">Concluído</p>
+                            </td>
+                            <td>
+                                <p class="totalCompra">R$ 1.000,00</p>
+                            </td>
+                        </tr>
+
+                        <tr class="itemCarrinho">
+                            <td>
+                                <p class="idCompra">#1234</p>
+                            </td>
+                            <td>
+                                <p class="nomeCliente">André</p>
+                            </td>
+                            <td>
+                                <p class="dataCompra">22/04/2025</p>
+                            </td>
+                            <td>
+                                <p class="statusCompraPendete">Pendente</p>
+                            </td>
+                            <td>
+                                <p class="totalCompra">R$ 1.000,00</p>
+                            </td>
+                        </tr>
+
+                        <tr class="itemCarrinho">
+                            <td>
+                                <p class="idCompra">#1234</p>
+                            </td>
+                            <td>
+                                <p class="nomeCliente">André</p>
+                            </td>
+                            <td>
+                                <p class="dataCompra">22/04/2025</p>
+                            </td>
+                            <td>
+                                <p class="statusCompraConcluida">Concluído</p>
+                            </td>
+                            <td>
+                                <p class="totalCompra">R$ 1.000,00</p>
+                            </td>
+                        </tr>
+
+                        <tr class="itemCarrinho">
+                            <td>
+                                <p class="idCompra">#1234</p>
+                            </td>
+                            <td>
+                                <p class="nomeCliente">André</p>
+                            </td>
+                            <td>
+                                <p class="dataCompra">22/04/2025</p>
+                            </td>
+                            <td>
+                                <p class="statusCompraPendete">Pendente</p>
+                            </td>
+                            <td>
+                                <p class="totalCompra">R$ 1.000,00</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    
+
+    <!--============== Rodapé ==============-->
+    <footer class="rodape">
+        <p>© Wilderness Store - Todos os direito reservados</p>
+    </footer>
+
+
+</body>
+</html>
