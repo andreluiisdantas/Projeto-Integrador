@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <title>Wilderness Store</title>
-    <link rel="stylesheet" href="../Style/Style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png">
+    <link rel="stylesheet" href="../Style/Style.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></link>
+    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png"></link>
 </head>
 <body>
 
@@ -16,23 +16,30 @@
             <a href="index.html" aria-label="Página Inicial">
                 <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa"></img>
             </a>
-
             <div class="menuDireito">
                 <form class="containerPesquisa">
-                    <label for="searchInput">Buscar itens</label>
+                    <label for="searchInput">
+                        Buscar itens
+                    </label>
                     <a href="busca.html">
                         <i class="bi bi-search" aria-hidden="true"></i>
                     </a>
-                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens...">
+                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens..."></input>
                 </form>
-
                 <ul class="menuLinks">
-                    <li><a class="links" href="index.html">Tela inicial</a></li>
-                    <li><a class="links" href="produtos.html">Produtos</a></li>
-                    <li><a class="links" href="pedidos.html">Pedidos</a></li>
-                    <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
+                    <li>
+                        <a class="links" href="index.html">Tela inicial</a>
+                    </li>
+                    <li>
+                        <a class="links" href="produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a class="links" href="pedidos.html">Pedidos</a>
+                    </li>
+                    <li>
+                        <a class="links" href="sobre-nos.html">Sobre nós</a>
+                    </li>
                 </ul>
-
                 <div class="icones">
                     <a class="iconesLinks" href="carrinho.html" aria-label="Carrinho de Compras">
                         <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho"></img>
@@ -45,11 +52,15 @@
         </nav>
     </header>
 
+    <!--============== Carrinho ==============-->
     <main>
         <section class="telaCarrinho">
 
+            <!--============== Lista de Itens no Carrinho ==============-->
             <section class="compras">
-                <h2>Carrinho de compras</h2>
+                <h2>
+                    Carrinho de compras
+                </h2>
 
                 <table class="tabelaCarrinho">
                     <thead>
@@ -58,23 +69,30 @@
                             <th>Preço</th>
                             <th>Quantidade</th>
                             <th>Subtotal</th>
-                            <th></th> </tr>
+                            <th><span class="label-visualmente-oculto">Ação</span></th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr class="itemCarrinho">
                             <td>
                                 <div class="infoProduto">
-                                    <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha">
-                                    <p>Mochila Trilha 50 litros vermelha</p>
+                                    <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha"></img>
+                                    <p>
+                                        Mochila Trilha 50 litros vermelha
+                                    </p>
                                 </div>
                             </td>
-                            <td class="precoProduto">R$ 650,00</td>
+                            <td class="precoProduto">
+                                R$ 650,00
+                            </td>
                             <td>
                                 <div class="seletorQuantidade">
-                                    <input type="number" class="inputQuantidade" value="1" min="1">
+                                    <input type="number" class="inputQuantidade" value="1" min="1" aria-label="Quantidade da Mochila Trilha 50 litros vermelha"></input>
                                 </div>
                             </td>
-                            <td class="subtotalProduto">R$ 650,00</td>
+                            <td class="subtotalProduto">
+                                R$ 650,00
+                            </td>
                             <td>
                                 <button class="botaoRemover" aria-label="Remover item">
                                     <i class="bi bi-trash"></i>
@@ -85,124 +103,107 @@
                         <tr class="itemCarrinho">
                             <td>
                                 <div class="infoProduto">
-                                    <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha">
-                                    <p>Mochila Trilha 50 litros vermelha</p>
+                                    <img src="../Images/Produtos/mochila_1 1.png" alt="Outra Mochila Trilha 50 litros vermelha"></img>
+                                    <p>
+                                        Outra Mochila Trilha 50 litros vermelha
+                                    </p>
                                 </div>
                             </td>
-                            <td class="precoProduto">R$ 650,00</td>
+                            <td class="precoProduto">
+                                R$ 650,00
+                            </td>
                             <td>
                                 <div class="seletorQuantidade">
-                                    <input type="number" class="inputQuantidade" value="1" min="1">
+                                    <input type="number" class="inputQuantidade" value="1" min="1" aria-label="Quantidade da Outra Mochila Trilha 50 litros vermelha"></input>
                                 </div>
                             </td>
-                            <td class="subtotalProduto">R$ 650,00</td>
+                            <td class="subtotalProduto">
+                                R$ 650,00
+                            </td>
                             <td>
                                 <button class="botaoRemover" aria-label="Remover item">
                                     <i class="bi bi-trash"></i>
                                 </button>
                             </td>
                         </tr>
-
-                        <tr class="itemCarrinho">
-                            <td>
-                                <div class="infoProduto">
-                                    <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha">
-                                    <p>Mochila Trilha 50 litros vermelha</p>
-                                </div>
-                            </td>
-                            <td class="precoProduto">R$ 650,00</td>
-                            <td>
-                                <div class="seletorQuantidade">
-                                    <input type="number" class="inputQuantidade" value="1" min="1">
-                                </div>
-                            </td>
-                            <td class="subtotalProduto">R$ 650,00</td>
-                            <td>
-                                <button class="botaoRemover" aria-label="Remover item">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        <tr class="itemCarrinho">
-                            <td>
-                                <div class="infoProduto">
-                                    <img src="../Images/Produtos/mochila_1 1.png" alt="Mochila Trilha 50 litros vermelha">
-                                    <p>Mochila Trilha 50 litros vermelha</p>
-                                </div>
-                            </td>
-                            <td class="precoProduto">R$ 650,00</td>
-                            <td>
-                                <div class="seletorQuantidade">
-                                    <input type="number" class="inputQuantidade" value="1" min="1">
-                                </div>
-                            </td>
-                            <td class="subtotalProduto">R$ 650,00</td>
-                            <td>
-                                <button class="botaoRemover" aria-label="Remover item">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-
-                        </tbody>
+                    </tbody>
                 </table>
             </section>
 
+            <!--============== Resumo da Compra ==============-->
             <section class="resumoCompras">
-                <h2>Resumo da compra</h2>
+                <h2>
+                    Resumo da compra
+                </h2>
                 <div class="caixaResumo">
-                    <h3>Subtotal</h3>
-                    <p>R$ 650,00</p>
-                    <p class="infoFrete">Frete grátis para todo o Brasil</p>
+                    <h3>
+                        Subtotal
+                    </h3>
+                    <p>
+                        R$ 650,00
+                    </p>
+                    <p class="infoFrete">
+                        Frete grátis para todo o Brasil
+                    </p>
                     <div class="linhaResumoTotal">
-                        <p>Valor Total:</p>
-                        <p class="valorFinal">R$ 650,00</p>
+                        <p>
+                            Valor Total:
+                        </p>
+                        <p class="valorFinal">
+                            R$ 650,00
+                        </p>
                     </div>
-                    <a href="finalizarCompra.html" type="button" class="botaoFinalizar">Finalizar Compra</a>
+                    <a href="finalizarCompra.html" class="botao botaoFinalizar">
+                        Finalizar Compra
+                    </a>
                 </div>
             </section>
-
         </section>
     </main>
 
-
-    <!--============== Rodapé ==============-->
+    <!--============== Footer ==============-->
     <footer>
         <div class="rodape">
-            <figure> 
-                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>  
+            <figure>
+                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>
             </figure>
 
             <article class="listaLinks">
                 <h3>Links</h3>
-                <a href="#">Tela Incial</a>
-                <a href="#">Produtos</a>
-                <a href="#">Pedidos</a>
-                <a href="#">Categorias</a>
+                <a href="index.html">Tela Incial</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="pedidos.html">Pedidos</a>
             </article>
 
             <article class="listaLinks">
                 <h3>Informações</h3>
-                <a href="#">Contato</a>
-                <a href="#">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre-nos.html">Sobre nós</a>
             </article>
 
             <article class="maisInformacoes">
                 <h3>Mais informações</h3>
-                <p>Informe seu e-mail para receber mais informações sobre ofertas.</p>
+                <p>
+                    Informe seu e-mail para receber mais informações sobre ofertas.
+                </p>
                 <form class="formRodape">
-                    <label for="emailInput">E-mail:</label>
+                    <label for="emailInputFooter">
+                        E-mail:
+                    </label>
                     <div class="emailRodape">
-                        <input class="inputEmail" id="emailInput" type="text" placeholder="E-mail..." required>
-                        <button class="botaoRodape"><i class="bi bi-send"></i></button>
+                        <input class="inputEmail" id="emailInputFooter" type="text" placeholder="E-mail..." required></input>
+                        <button class="botaoRodape">
+                            <i class="bi bi-send"></i>
+                        </button>
                     </div>
                 </form>
             </article>
         </div>
 
-           <hr></hr>
-        <p class="direitosReservados">© André Luis Sousa Dantas - Todos os direitos reservados</p>
+        <hr></hr>
+        <p class="direitosReservados">
+            © André Luis Sousa Dantas - Todos os direitos reservados
+        </p>
     </footer>
 
 </body>

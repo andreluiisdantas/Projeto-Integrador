@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <title>Wilderness Store</title>
-    <link rel="stylesheet" href="../Style/Style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png">
+    <link rel="stylesheet" href="../Style/Style.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></link>
+    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png"></link>
 </head>
 <body>
 
@@ -16,23 +16,30 @@
             <a href="index.html" aria-label="Página Inicial">
                 <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa"></img>
             </a>
-
             <div class="menuDireito">
                 <form class="containerPesquisa">
-                    <label for="searchInput">Buscar itens</label>
+                    <label for="searchInput">
+                        Buscar itens
+                    </label>
                     <a href="busca.html">
                         <i class="bi bi-search" aria-hidden="true"></i>
                     </a>
-                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens...">
+                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens..."></input>
                 </form>
-
                 <ul class="menuLinks">
-                    <li><a class="links" href="index.html">Tela inicial</a></li>
-                    <li><a class="links" href="produtos.html">Produtos</a></li>
-                    <li><a class="links" href="pedidos.html">Pedidos</a></li>
-                    <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
+                    <li>
+                        <a class="links" href="index.html">Tela inicial</a>
+                    </li>
+                    <li>
+                        <a class="links" href="produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a class="links" href="pedidos.html">Pedidos</a>
+                    </li>
+                    <li>
+                        <a class="links" href="sobre-nos.html">Sobre nós</a>
+                    </li>
                 </ul>
-
                 <div class="icones">
                     <a class="iconesLinks" href="carrinho.html" aria-label="Carrinho de Compras">
                         <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho"></img>
@@ -46,6 +53,7 @@
     </header>
 
     <main>
+        <!--============== Container Perfil ==============-->
         <section class="perfilContainer">
             <div class="perfilFoto">
                 <i class="bi bi-person-circle"></i>
@@ -55,91 +63,122 @@
             </div>
 
             <div class="campoDados">
-                <label>Nome</label>
-                <input type="text" name="nome" placeholder="Nome..." value="Maria da Silva"></input>
+                <label for="nomeInput">
+                    Nome
+                </label>
+                <input id="nomeInput" type="text" name="nome" placeholder="Nome..." value="Maria da Silva"></input>
             </div>
 
             <div class="campoDados">
-                <label>E-mail</label>
-                <input type="email" name="email" placeholder="E-mail..." value="maria.silva@email.com"></input>
+                <label for="emailInput">
+                    E-mail
+                </label>
+                <input id="emailInput" type="email" name="email" placeholder="E-mail..." value="maria.silva@email.com"></input>
             </div>
 
             <div class="campoDados">
-                <label>CPF</label>
-                <input type="text" name="cpf" placeholder="CPF..." value="123.456.789-00"></input>
+                <label for="cpfInput">
+                    CPF
+                </label>
+                <input id="cpfInput" type="text" name="cpf" placeholder="CPF..." value="123.456.789-00"></input>
             </div>
 
             <div class="campoDados">
-                <label>Telefone</label>
-                <input type="tel" name="telefone" placeholder="Telefone..." value="(11) 91234-5678"></input>
+                <label for="telefoneInput">
+                    Telefone
+                </label>
+                <input id="telefoneInput" type="tel" name="telefone" placeholder="Telefone..." value="(11) 91234-5678"></input>
             </div>
 
             <div class="campoDados">
-                <label>Senha</label>
-                <input type="password" name="senha" placeholder="Senha..." value="senhaSuperSegura123"></input>
+                <label for="senhaInput">
+                    Senha
+                </label>
+                <input id="senhaInput" type="password" name="senha" placeholder="Senha..." value="senhaSuperSegura123"></input>
             </div>
 
             <div class="campoDados">
-                <label>Confirmar senha</label>
-                <input type="password" name="confirmar_senha" placeholder="Confirmar senha..." value="senhaSuperSegura123"></input>
+                <label for="confirmarSenhaInput">
+                    Confirmar senha
+                </label>
+                <input id="confirmarSenhaInput" type="password" name="confirmar_senha" placeholder="Confirmar senha..." value="senhaSuperSegura123"></input>
             </div>
 
-            <button class="perfilBotaoSalvar">Salvar</button>
+            <button class="botao botaoPrincipal">
+                Salvar
+            </button>
         </section>
 
+        <!--============== Logout ==============-->
         <a href="login.html" class="logout">
-            <p>Sair</p>
+            <p>
+                Sair
+            </p>
             <i class="bi bi-box-arrow-in-right"></i>
         </a>
 
+        <!--============== Favoritos ==============-->
         <a href="favoritos.html" class="botaoNavegacaoFavoritos">
             <i class="bi bi-heart-fill"></i>
-            <p>Favoritos</p>
+            <p>
+                Favoritos
+            </p>
         </a>
 
+        <!--============== Históricos ==============-->
         <a href="historico.html" class="botaoNavegacaoHistorico">
             <i class="bi bi-list-ul"></i>
-            <p>Histórico</p>
+            <p>
+                Histórico
+            </p>
         </a>
- 
     </main>
 
     <!--============== Rodapé ==============-->
     <footer>
         <div class="rodape">
-            <figure> 
-                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>  
+            <figure>
+                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>
             </figure>
-
             <article class="listaLinks">
-                <h3>Links</h3>
-                <a href="#">Tela Incial</a>
-                <a href="#">Produtos</a>
-                <a href="#">Pedidos</a>
-                <a href="#">Categorias</a>
+                <h3>
+                    Links
+                </h3>
+                <a href="index.html">Tela Incial</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="pedidos.html">Pedidos</a>
             </article>
-
             <article class="listaLinks">
-                <h3>Informações</h3>
-                <a href="#">Contato</a>
-                <a href="#">Sobre nós</a>
+                <h3>
+                    Informações
+                </h3>
+                <a href="contato.html">Contato</a>
+                <a href="sobre-nos.html">Sobre nós</a>
             </article>
-
             <article class="maisInformacoes">
-                <h3>Mais informações</h3>
-                <p>Informe seu e-mail para receber mais informações sobre ofertas.</p>
+                <h3>
+                    Mais informações
+                </h3>
+                <p>
+                    Informe seu e-mail para receber mais informações sobre ofertas.
+                </p>
                 <form class="formRodape">
-                    <label for="emailInput">E-mail:</label>
+                    <label for="emailInputFooter">
+                        E-mail:
+                    </label>
                     <div class="emailRodape">
-                        <input class="inputEmail" id="emailInput" type="text" placeholder="E-mail..." required>
-                        <button class="botaoRodape"><i class="bi bi-send"></i></button>
+                        <input class="inputEmail" id="emailInputFooter" type="text" placeholder="E-mail..." required></input>
+                        <button class="botaoRodape">
+                            <i class="bi bi-send"></i>
+                        </button>
                     </div>
                 </form>
             </article>
         </div>
-
-           <hr></hr>
-        <p class="direitosReservados">© André Luis Sousa Dantas - Todos os direitos reservados</p>
+        <hr></hr>
+        <p class="direitosReservados">
+            © André Luis Sousa Dantas - Todos os direitos reservados
+        </p>
     </footer>
 
 </body>
