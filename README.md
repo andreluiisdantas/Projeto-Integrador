@@ -29,14 +29,13 @@ Desenvolver a interface de uma loja virtual especializada em **itens de camping,
 - **Detalhes do Produto** com imagens, descrição, preços e especificações.
 - **Área de Busca** com filtros interativos para facilitar a navegação e encontrar produtos específicos.
 - **Simulação de Fluxo de Compra**, com telas de carrinho e checkout (sem funcionalidades reais).
-- **Design Responsivo**, garantindo que o site funcione bem em dispositivos móveis e desktops.
 
 ### 🔐 **Simulação de Conexão Segura (SSL)**
 - Utilização do **OpenSSL** para criar um **certificado SSL autoassinado**, simulando uma conexão segura **HTTPS**.
 - A medida visa representar de maneira simples como a segurança de dados seria implementada em um e-commerce real.
 
 ### 📦 **Monitoramento de Estoque** (C)
-- **Código em C** desenvolvido para ser executado em microcontroladores como o **ESP32/ESP8266**.
+- **Código em C** desenvolvido para ser executado em microcontroladores como o **ESP8266**.
 - Simulação de **sensores de estoque** que medem o nível de itens como barracas, mochilas e lanternas em estoque.
 - Os dados de estoque são exportados em tempo real para uma **planilha Google Sheets**, gerando relatórios com o status do inventário.
 
