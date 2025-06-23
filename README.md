@@ -15,7 +15,7 @@ Desenvolver a interface de uma loja virtual especializada em **itens de camping,
 ## 🧱 Tecnologias Utilizadas
 
 - **HTML5 / CSS3** – Para construção da interface visual e estilização do site.
-- **C (.ino)** – Código de automação para microcontrolador **ESP32/ESP8266**, simulando sensores de estoque.
+- **C (.ino)** – Código de automação para microcontrolador **ESP8266**, simulando sensores de estoque.
 - **Python** – Para automação de notificações via **WhatsApp** e **e-mail**.
 - **OpenSSL** – Geração de certificado SSL autoassinado para simular a segurança HTTPS.
 
