@@ -1,4 +1,4 @@
-# 🏕️ Projeto Integrador - E-commerce de Itens de Camping e Sobrevivência - Wilderness Gear
+# 🏕️ Projeto Integrador - E-commerce de Itens de Camping e Sobrevivência - Wilderness Store
 
 Este projeto foi desenvolvido como parte do **Projeto Integrador do SENAI**. A proposta foi criar um protótipo visual de **e-commerce focado em equipamentos para camping, trilhas e sobrevivência**, utilizando apenas **HTML** e **CSS** para a interface, enquanto as soluções de **controle de estoque** e **notificações automatizadas** foram implementadas com **C** (para hardware) e **Python**.
 
