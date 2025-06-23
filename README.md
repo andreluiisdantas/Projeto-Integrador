@@ -44,3 +44,5 @@ Desenvolver a interface de uma loja virtual especializada em **itens de camping,
 - As notificações incluem mensagens por **WhatsApp**, utilizando a biblioteca **pyautogui**, e **e-mails** informando o status atual do estoque.
 - O objetivo é garantir que o administrador da loja seja notificado quando algum item estiver em falta ou com quantidade crítica.
 
+### 🎨 Link do Figma **
+https://www.figma.com/design/az6UWc54Czj1gQ5zDg2vYV/Projeto---Integrador?node-id=0-1&t=UPwvMuDebonduKau-1
