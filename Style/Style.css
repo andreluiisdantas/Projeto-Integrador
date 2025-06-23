@@ -387,7 +387,7 @@ body {
 .coracaoFavorito {
   cursor: pointer;
   font-size: 28px;
-  color: #AC4A0C;
+  color: #F4F1ED;
   display: inline-block;
   position: relative;
   width: 1em;
@@ -1041,7 +1041,7 @@ footer {
 .botaoRemover {
     background: none;
     border: none;
-    color: #AC4A0C;
+    color: #F4F1ED;
     font-size: 18px;
     cursor: pointer;
 }
