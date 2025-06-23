@@ -361,6 +361,10 @@ body {
     left: 17px;
 }
 
+.produtoOferta{
+    height: 150px;
+}
+
 .iconeFavoritos {
   position: absolute;
   right: 17px;
@@ -793,7 +797,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 90px 40px;
-    gap: 80px;
+    gap: 30px;
 }
 
 .todasCategorias h2{
@@ -807,7 +811,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 42px;
+    padding-top: 15px;
     row-gap: 50px;
 }
 
@@ -1000,18 +1004,17 @@ footer {
 .itemCarrinho td:last-child {
     flex: 0.3;
     justify-content: flex-end;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .infoProduto {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .infoProduto img {
-    width: 110px;
-    height: auto;
+    width: 50px;
 }
 
 .infoProduto p {
@@ -1299,6 +1302,13 @@ legend {
     font-size: 50px;
     font-weight: 400;
     padding: 30px;
+}
+
+.precoTotal{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 /* ============== Tela Perfil ============== */
