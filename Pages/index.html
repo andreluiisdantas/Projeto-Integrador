@@ -1,308 +1,293 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    <title>Wilderness Store</title>
-    <link rel="stylesheet" href="../Style/Style.css"></link>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></link>
-    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png"></link>
-</head>
-<body>
-
-    <!--============== NavBar ==============-->
-    <header class="header">
-        <nav class="navbar">
-            <a href="login.html" aria-label="Página Inicial">
-                <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa"></img>
-            </a>
-            <div class="menuDireito">
-                <form class="containerPesquisa">
-                    <label for="searchInput">
-                        Buscar itens
-                    </label>
-                    <a href="login.html">
-                        <i class="bi bi-search" aria-hidden="true"></i>
-                    </a>
-                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens..."></input>
-                </form>
-                <ul class="menuLinks">
-                    <li>
-                        <a class="links" href="login.html">Tela inicial</a>
-                    </li>
-                    <li>
-                        <a class="links" href="login.html">Produtos</a>
-                    </li>
-                    <li>
-                        <a class="links" href="login.html">Pedidos</a>
-                    </li>
-                    <li>
-                        <a class="links" href="login.html">Sobre nós</a>
-                    </li>
-                </ul>
-                <div class="icones">
-                    <a class="iconesLinks" href="login.html" aria-label="Carrinho de Compras">
-                        <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho"></img>
-                    </a>
-                    <a class="iconesLinks" href="login.html" aria-label="Perfil do Usuário">
-                        <img src="../Images/Icone-Usuario.svg" alt="Icone usuário"></img>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!--============== Banner Tela Inicial ==============-->
-        <section class="banner">
-            <img class="bannerHome" src="../Images/Banner-Home.png" alt="Homem com uma mochila de acampamento olhando para uma paisagem montanhosa."></img>
-            <div class="tituloBanner">
-                <h1>
-                    Sobrevivência e Camping
-                </h1>
-                <a class="botao botaoBanner" href="login.html">
-                    COMPRAR
+<!--============== NavBar ==============-->
+<header class="header">
+    <nav class="navbar">
+        <a href="login.html" aria-label="Página Inicial">
+            <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa" />
+        </a>
+        <div class="menuDireito">
+            <form class="containerPesquisa">
+                <label for="searchInput">
+                    Buscar itens
+                </label>
+                <a href="login.html">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                </a>
+                <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens..." />
+            </form>
+            <ul class="menuLinks">
+                <li>
+                    <a class="links" href="login.html">Tela inicial</a>
+                </li>
+                <li>
+                    <a class="links" href="login.html">Produtos</a>
+                </li>
+                <li>
+                    <a class="links" href="login.html">Pedidos</a>
+                </li>
+                <li>
+                    <a class="links" href="login.html">Sobre nós</a>
+                </li>
+            </ul>
+            <div class="icones">
+                <a class="iconesLinks" href="login.html" aria-label="Carrinho de Compras">
+                    <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho" />
+                </a>
+                <a class="iconesLinks" href="login.html" aria-label="Perfil do Usuário">
+                    <img src="../Images/Icone-Usuario.svg" alt="Icone usuário" />
                 </a>
             </div>
-        </section>
+        </div>
+    </nav>
+</header>
 
-        <!--============== Categorias ==============-->
-        <section class="categorias">
-            <h2>
-                Destaque de categorias
-            </h2>
-            <div class="itensCategorias">
-                <div class="categoriasEsquerda">
+<main>
+    <!--============== Banner Tela Inicial ==============-->
+    <section class="banner">
+        <img class="bannerHome" src="../Images/Banner-Home.png" alt="Homem com uma mochila de acampamento olhando para uma paisagem montanhosa." />
+        <div class="tituloBanner">
+            <h1>
+                Sobrevivência e Camping
+            </h1>
+            <a class="botao botaoBanner" href="login.html">
+                COMPRAR
+            </a>
+        </div>
+    </section>
+
+    <!--============== Categorias ==============-->
+    <section class="categorias">
+        <h2>
+            Destaque de categorias
+        </h2>
+        <div class="itensCategorias">
+            <div class="categoriasEsquerda">
+                <a href="login.html" class="cardCategorias">
+                    <figure>
+                        <img class="categoriaMochilas" src="../Images/Mochilas-Acampamento.png" alt="Duas mochilas de acampamento apoiadas em uma rocha." />
+                        <figcaption>
+                            Mochilas de acampamento
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="categoriasDireita">
+                <div class="categoriasPequenas">
                     <a href="login.html" class="cardCategorias">
                         <figure>
-                            <img class="categoriaMochilas" src="../Images/Mochilas-Acampamento.png" alt="Duas mochilas de acampamento apoiadas em uma rocha."></img>
+                            <img class="lanternas" src="../Images/Lanternas.png" alt="Coleção de lanternas de cabeça e de mão." />
                             <figcaption>
-                                Mochilas de acampamento
+                                Lanternas
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="login.html" class="cardCategorias">
+                        <figure>
+                            <img class="garrafas" src="../Images/Garrafas.png" alt="Diversas garrafas térmicas de metal." />
+                            <figcaption>
+                                Garrafas
                             </figcaption>
                         </figure>
                     </a>
                 </div>
-                <div class="categoriasDireita">
-                    <div class="categoriasPequenas">
-                        <a href="login.html" class="cardCategorias">
-                            <figure>
-                                <img class="lanternas" src="../Images/Lanternas.png" alt="Coleção de lanternas de cabeça e de mão."></img>
-                                <figcaption>
-                                    Lanternas
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="login.html" class="cardCategorias">
-                            <figure>
-                                <img class="garrafas" src="../Images/Garrafas.png" alt="Diversas garrafas térmicas de metal."></img>
-                                <figcaption>
-                                    Garrafas
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="login.html" class="cardCategorias">
-                            <figure>
-                                <img class="barracas" src="../Images/Barracas.png" alt="Barraca de acampamento montada na floresta."></img>
-                                <figcaption>
-                                    Barracas
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                <div>
+                    <a href="login.html" class="cardCategorias">
+                        <figure>
+                            <img class="barracas" src="../Images/Barracas.png" alt="Barraca de acampamento montada na floresta." />
+                            <figcaption>
+                                Barracas
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
-            <div class="verTodos">
-                <a href="produtos.html">
-                    Ver todos
+        </div>
+        <div class="verTodos">
+            <a href="produtos.html">
+                Ver todos
+            </a>
+        </div>
+    </section>
+    
+    <!--============== Ofertas ==============-->
+    <section class="ofertas">
+        <h2>
+            Ofertas da semana
+        </h2>
+        <div class="todasOfertas">
+            <article class="cardProduto">
+                <div class="destaqueOferta">
+                    <p>
+                        Oferta
+                    </p>
+                </div>
+                <a href="login.html">
+                    <figure>
+                        <img class="produtoOferta" src="../Images/Produtos/mochila1_1.png" alt="Mochila Acampamento" />
+                    </figure>
                 </a>
-            </div>
-        </section>
-        
-        <!--============== Ofertas ==============-->
-        <section class="ofertas">
-            <h2>
-                Ofertas da semana
-            </h2>
-            <div class="todasOfertas">
-                <article class="cardProduto">
-                    <div class="destaqueOferta">
-                        <p>
-                            Oferta
+                <div class="informacoes">
+                    <p class="marca">
+                        Forclaz
+                    </p>
+                    <h3 class="nomeProduto">
+                        Mochila Trilha 50 litros vermelha
+                    </h3>
+                    <div class="valoresProduto">
+                        <p class="precoAtual">
+                            R$ 650,00
+                        </p>
+                        <p class="precoAntigo">
+                            <del>R$ 750,00</del>
                         </p>
                     </div>
-                    <a href="login.html">
-                        <figure>
-                            <img class="produtoOferta" src="../Images/Produtos/mochila1_1.png" alt="Mochila Acampamento"></img>
-                        </figure>
+                    <a href="login.html" class="botao botaoCompra">
+                        COMPRAR
                     </a>
-                    <div class="informacoes">
-                        <p class="marca">
-                            Forclaz
-                        </p>
-                        <h3 class="nomeProduto">
-                            Mochila Trilha 50 litros vermelha
-                        </h3>
-                        <div class="valoresProduto">
-                            <p class="precoAtual">
-                                R$ 650,00
-                            </p>
-                            <p class="precoAntigo">
-                                <del>R$ 750,00</del>
-                            </p>
-                        </div>
-                        <a href="login.html" class="botao botaoCompra">
-                            COMPRAR
-                        </a>
-                    </div>
-                </article>
-
-                <article class="cardProduto">
-                    <div class="destaqueOferta">
-                        <p>
-                            Oferta
-                        </p>
-                    </div>
-                    <a href="login.html">
-                        <figure>
-                            <img class="produtoOferta" src="../Images/Produtos/barraca1_1.png" alt="Barraca"></img>
-                        </figure>
-                    </a>
-                    <div class="informacoes">
-                        <p class="marca">
-                            Quechua
-                        </p>
-                        <h3 class="nomeProduto">
-                            Barraca de Camping Quechua 3 pessoas Mh100
-                        </h3>
-                        <div class="valoresProduto">
-                            <p class="precoAtual">
-                                R$ 400,00
-                            </p>
-                            <p class="precoAntigo">
-                                <del>R$ 450,00</del>
-                            </p>
-                        </div>
-                        <a href="login.html" class="botao botaoCompra">
-                            COMPRAR
-                        </a>
-                    </div>
-                </article>
-
-                <article class="cardProduto">
-                    <div class="destaqueOferta">
-                        <p>
-                            Oferta
-                        </p>
-                    </div>
-                    <a href="login.html">
-                        <figure>
-                            <img class="produtoOferta" src="../Images/Produtos/garrafa1_1.png" alt="Garrafa Térmica"></img>
-                        </figure>
-                    </a>
-                    <div class="informacoes">
-                        <p class="marca">
-                            Quechua
-                        </p>
-                        <h3 class="nomeProduto">
-                            Garrafa de Trilha Isotérmica MH500 500ml
-                        </h3>
-                        <div class="valoresProduto">
-                            <p class="precoAtual">
-                                R$ 150,00
-                            </p>
-                            <p class="precoAntigo">
-                                <del>R$ 200,00</del>
-                            </p>
-                        </div>
-                        <a href="login.html" class="botao botaoCompra">
-                            COMPRAR
-                        </a>
-                    </div>
-                </article>
-
-                <article class="cardProduto">
-                    <div class="destaqueOferta">
-                        <p>
-                            Oferta
-                        </p>
-                    </div>
-                    <a href="produtos.html">
-                        <figure>
-                            <img class="produtoOferta" src="../Images/Produtos/lanterna1_1.png" alt="Mochila"></img>
-                        </figure>
-                    </a>
-                    <div class="informacoes">
-                        <p class="marca">
-                            Forclaz
-                        </p>
-                        <h3 class="nomeProduto">
-                            Lanterna Frontal de Trilha Recarregável - HL900
-                        </h3>
-                        <div class="valoresProduto">
-                            <p class="precoAtual">
-                                R$ 400,00
-                            </p>
-                            <p class="precoAntigo">
-                                <del>R$ 500,00</del>
-                            </p>
-                        </div>
-                        <a href="login.html" class="botao botaoCompra">
-                            COMPRAR
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <!--============== Rodapé ==============-->
-    <footer>
-        <div class="rodape">
-            <figure>
-                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>
-            </figure>
-            <article class="listaLinks">
-                <h3>
-                    Links
-                </h3>
-                <a href="index.html">Tela Incial</a>
-                <a href="login.html">Produtos</a>
-                <a href="login.html">Pedidos</a>
+                </div>
             </article>
-            <article class="listaLinks">
-                <h3>
-                    Informações
-                </h3>
-                <a href="login.html">Contato</a>
-                <a href="login.html">Sobre nós</a>
-            </article>
-            <article class="maisInformacoes">
-                <h3>
-                    Mais informações
-                </h3>
-                <p>
-                    Informe seu e-mail para receber mais informações sobre ofertas.
-                </p>
-                <form class="formRodape">
-                    <label for="emailInputFooter">
-                        E-mail:
-                    </label>
-                    <div class="emailRodape">
-                        <input class="inputEmail" id="emailInputFooter" type="text" placeholder="E-mail..." required></input>
-                        <button class="botaoRodape">
-                            <i class="bi bi-send"></i>
-                        </button>
+
+            <article class="cardProduto">
+                <div class="destaqueOferta">
+                    <p>
+                        Oferta
+                    </p>
+                </div>
+                <a href="login.html">
+                    <figure>
+                        <img class="produtoOferta" src="../Images/Produtos/barraca1_1.png" alt="Barraca" />
+                    </figure>
+                </a>
+                <div class="informacoes">
+                    <p class="marca">
+                        Quechua
+                    </p>
+                    <h3 class="nomeProduto">
+                        Barraca de Camping Quechua 3 pessoas Mh100
+                    </h3>
+                    <div class="valoresProduto">
+                        <p class="precoAtual">
+                            R$ 400,00
+                        </p>
+                        <p class="precoAntigo">
+                            <del>R$ 450,00</del>
+                        </p>
                     </div>
-                </form>
+                    <a href="login.html" class="botao botaoCompra">
+                        COMPRAR
+                    </a>
+                </div>
+            </article>
+
+            <article class="cardProduto">
+                <div class="destaqueOferta">
+                    <p>
+                        Oferta
+                    </p>
+                </div>
+                <a href="login.html">
+                    <figure>
+                        <img class="produtoOferta" src="../Images/Produtos/garrafa1_1.png" alt="Garrafa Térmica" />
+                    </figure>
+                </a>
+                <div class="informacoes">
+                    <p class="marca">
+                        Quechua
+                    </p>
+                    <h3 class="nomeProduto">
+                        Garrafa de Trilha Isotérmica MH500 500ml
+                    </h3>
+                    <div class="valoresProduto">
+                        <p class="precoAtual">
+                            R$ 150,00
+                        </p>
+                        <p class="precoAntigo">
+                            <del>R$ 200,00</del>
+                        </p>
+                    </div>
+                    <a href="login.html" class="botao botaoCompra">
+                        COMPRAR
+                    </a>
+                </div>
+            </article>
+
+            <article class="cardProduto">
+                <div class="destaqueOferta">
+                    <p>
+                        Oferta
+                    </p>
+                </div>
+                <a href="produtos.html">
+                    <figure>
+                        <img class="produtoOferta" src="../Images/Produtos/lanterna1_1.png" alt="Mochila" />
+                    </figure>
+                </a>
+                <div class="informacoes">
+                    <p class="marca">
+                        Forclaz
+                    </p>
+                    <h3 class="nomeProduto">
+                        Lanterna Frontal de Trilha Recarregável - HL900
+                    </h3>
+                    <div class="valoresProduto">
+                        <p class="precoAtual">
+                            R$ 400,00
+                        </p>
+                        <p class="precoAntigo">
+                            <del>R$ 500,00</del>
+                        </p>
+                    </div>
+                    <a href="login.html" class="botao botaoCompra">
+                        COMPRAR
+                    </a>
+                </div>
             </article>
         </div>
-        <hr></hr>
-        <p class="direitosReservados">
-            © André Luis Sousa Dantas - Todos os direitos reservados
-        </p>
-    </footer>
+    </section>
+</main>
 
-</body>
-</html>
+<!--============== Rodapé ==============-->
+<footer>
+    <div class="rodape">
+        <figure>
+            <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa" />
+        </figure>
+        <article class="listaLinks">
+            <h3>
+                Links
+            </h3>
+            <a href="index.html">Tela Incial</a>
+            <a href="login.html">Produtos</a>
+            <a href="login.html">Pedidos</a>
+        </article>
+        <article class="listaLinks">
+            <h3>
+                Informações
+            </h3>
+            <a href="login.html">Contato</a>
+            <a href="login.html">Sobre nós</a>
+        </article>
+        <article class="maisInformacoes">
+            <h3>
+                Mais informações
+            </h3>
+            <p>
+                Informe seu e-mail para receber mais informações sobre ofertas.
+            </p>
+            <form class="formRodape">
+                <label for="emailInputFooter">
+                    E-mail:
+                </label>
+                <div class="emailRodape">
+                    <input class="inputEmail" id="emailInputFooter" type="text" placeholder="E-mail..." required />
+                    <button class="botaoRodape">
+                        <i class="bi bi-send"></i>
+                    </button>
+                </div>
+            </form>
+        </article>
+    </div>
+    <hr />
+    <p class="direitosReservados">
+        © André Luis Sousa Dantas - Todos os direitos reservados
+    </p>
+</footer>

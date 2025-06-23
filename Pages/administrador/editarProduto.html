@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wilderness Store</title>
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></link>
-    <link rel="shortcut icon" type="imagex/png" href="../../Images/Logo-Icone.png"></link>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="shortcut icon" type="imagex/png" href="../../Images/Logo-Icone.png" />
 </head>
 <body>
 
     <!--============== Cabeçalho ==============-->
     <header class="cabecalho">
-        <img src="../../Images/logoAdmin.png" alt="Logo Administrador"></img>
+        <img src="../../Images/logoAdmin.png" alt="Logo Administrador" />
         <h1>
             Painel Administrador
         </h1>
         <div class="icones">
             <a class="iconesLinks" href="perfilAdmin.html" aria-label="Perfil do Usuário">
-                <img src="../../Images/Icone-Usuario.svg" alt="Icone usuário"></img>
+                <img src="../../Images/Icone-Usuario.svg" alt="Icone usuário" />
             </a>
         </div>
     </header>
@@ -48,20 +48,20 @@
                 <!--============== Fotos Produto ==============-->
                 <article class="fotoProduto">
                     <figure class="fotoPrincipal">
-                        <img src="../../Images/Produtos/mochila1_1.png" alt="Foto principal Mochila vermelha"></img>
+                        <img src="../../Images/Produtos/mochila1_1.png" alt="Foto principal Mochila vermelha" />
                     </figure>
                     <article class="maisFotos">
                         <figure>
-                            <img class="maisImagens" src="../../Images/Produtos/mochila1_2.png" alt="Segunda foto Mochila vermelha"></img>
+                            <img class="maisImagens" src="../../Images/Produtos/mochila1_2.png" alt="Segunda foto Mochila vermelha" />
                         </figure>
                         <figure>
-                            <img class="maisImagens" src="../../Images/Produtos/mochila1_3.png" alt="Terceira foto Mochila vermelha"></img>
+                            <img class="maisImagens" src="../../Images/Produtos/mochila1_3.png" alt="Terceira foto Mochila vermelha" />
                         </figure>
                         <figure>
-                            <img class="maisImagens" src="../../Images/Produtos/mochila1_4.png" alt="Quarta foto Mochila vermelha"></img>
+                            <img class="maisImagens" src="../../Images/Produtos/mochila1_4.png" alt="Quarta foto Mochila vermelha" />
                         </figure>
                         <figure>
-                            <img class="maisImagens" src="../../Images/Produtos/mochila1_5.png" alt="Quinta foto Mochila vermelha"></img>
+                            <img class="maisImagens" src="../../Images/Produtos/mochila1_5.png" alt="Quinta foto Mochila vermelha" />
                         </figure>
                     </article>
                 </article>
@@ -73,22 +73,22 @@
                             <label for="nomeProduto">
                                 Nome
                             </label>
-                            <input id="nomeProduto" type="text" name="name" placeholder="Nome do produto..." required value="Mochila de Trilha 50 litros vermelha"></input>
+                            <input id="nomeProduto" type="text" name="name" placeholder="Nome do produto..." required value="Mochila de Trilha 50 litros vermelha" />
                         </div>
                         <div class="campoDados">
                             <label for="precoProduto">
                                 Preço
                             </label>
-                            <input id="precoProduto" type="number" name="preco" placeholder="Preço do produto..." required value="650.00"></input>
+                            <input id="precoProduto" type="number" name="preco" placeholder="Preço do produto..." required value="650.00" />
                         </div>
                         <div class="campoDados">
                             <label for="categoriaProduto">
                                 Categoria
                             </label>
-                            <select id="categoriaProduto" name="categoria">
-                                <option value="" disabled selected>Mochilas</option>
+                            <select id="categoriaProduto" name="categoria" required>
+                                <option value="" disabled>Categoria</option>
                                 <option value="barracas">Barracas</option>
-                                <option value="mochilas">Mochilas</option>
+                                <option value="mochilas" selected>Mochilas</option>
                                 <option value="lanternas">Lanternas</option>
                                 <option value="garrafas-termicas">Garrafas térmicas</option>
                                 <option value="calcados">Calçados</option>
@@ -98,7 +98,7 @@
                             <label for="descricaoProduto">
                                 Descrição
                             </label>
-                            <textarea id="descricaoProduto" name="descricao" placeholder="Descrição do produto..." required></textarea>
+                            <textarea id="descricaoProduto" name="descricao" placeholder="Descrição do produto..." required>Descrição da mochila vermelha, resistente e ideal para trilhas longas.</textarea>
                         </div>
                         <button class="botaoAdmin botaoPrincipalAdmin" type="submit">
                             Salvar

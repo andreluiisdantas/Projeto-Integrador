@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wilderness Store</title>
-    <link rel="stylesheet" href="../Style/Style.css"></link>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></link>
-    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png"></link>
+    <link rel="stylesheet" href="../Style/Style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="shortcut icon" type="imagex/png" href="../Images/Logo-Icone.png" />
 </head>
 <body>
 
@@ -14,38 +14,28 @@
     <header class="header">
         <nav class="navbar">
             <a href="telaInicial.html" aria-label="Página Inicial">
-                <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa"></img>
+                <img class="logo" src="../Images/Logo.svg" alt="Logo da Empresa" />
             </a>
             <div class="menuDireito">
                 <form class="containerPesquisa">
-                    <label for="searchInput">
-                        Buscar itens
-                    </label>
+                    <label for="searchInput">Buscar itens</label>
                     <a href="busca.html">
                         <i class="bi bi-search" aria-hidden="true"></i>
                     </a>
-                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens..."></input>
+                    <input class="barraPesquisa" id="searchInput" type="search" placeholder="Buscar itens..." />
                 </form>
                 <ul class="menuLinks">
-                    <li>
-                        <a class="links" href="telaInicial.html">Tela inicial</a>
-                    </li>
-                    <li>
-                        <a class="links" href="produtos.html">Produtos</a>
-                    </li>
-                    <li>
-                        <a class="links" href="pedidos.html">Pedidos</a>
-                    </li>
-                    <li>
-                        <a class="links" href="sobre-nos.html">Sobre nós</a>
-                    </li>
+                    <li><a class="links" href="telaInicial.html">Tela inicial</a></li>
+                    <li><a class="links" href="produtos.html">Produtos</a></li>
+                    <li><a class="links" href="pedidos.html">Pedidos</a></li>
+                    <li><a class="links" href="sobre-nos.html">Sobre nós</a></li>
                 </ul>
                 <div class="icones">
                     <a class="iconesLinks" href="carrinho.html" aria-label="Carrinho de Compras">
-                        <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho"></img>
+                        <img src="../Images/Icone-Carrinho.svg" alt="Icone carrinho" />
                     </a>
                     <a class="iconesLinks" href="perfil.html" aria-label="Perfil do Usuário">
-                        <img src="../Images/Icone-Usuario.svg" alt="Icone usuário"></img>
+                        <img src="../Images/Icone-Usuario.svg" alt="Icone usuário" />
                     </a>
                 </div>
             </div>
@@ -57,47 +47,33 @@
 
             <!--============== Dados Entrega ==============-->
             <section class="dadosEntrega">
-                <h2>
-                    Dados da entrega
-                </h2>
+                <h2>Dados da entrega</h2>
                 <article>
                     <div class="dadosHorizontais">
                         <div class="campoDados">
-                            <label for="cepInput">
-                                CEP
-                            </label>
-                            <input id="cepInput" class="campoMaior" type="number" name="cep" placeholder="CEP..."></input>
+                            <label for="cepInput">CEP</label>
+                            <input id="cepInput" class="campoMaior" type="number" name="cep" placeholder="CEP..." />
                         </div>
                         <div class="campoDados">
-                            <label for="numeroInput">
-                                Número
-                            </label>
-                            <input id="numeroInput" class="campoMenor" type="number" name="numero" placeholder="Número..."></input>
+                            <label for="numeroInput">Número</label>
+                            <input id="numeroInput" class="campoMenor" type="number" name="numero" placeholder="Número..." />
                         </div>
                     </div>
                     <div class="campoDados">
-                        <label for="ruaInput">
-                            Rua
-                        </label>
-                        <input id="ruaInput" type="text" name="rua" placeholder="Nome da rua..."></input>
+                        <label for="ruaInput">Rua</label>
+                        <input id="ruaInput" type="text" name="rua" placeholder="Nome da rua..." />
                     </div>
                     <div class="campoDados">
-                        <label for="bairroInput">
-                            Bairro
-                        </label>
-                        <input id="bairroInput" type="text" name="bairro" placeholder="Nome do bairro..."></input>
+                        <label for="bairroInput">Bairro</label>
+                        <input id="bairroInput" type="text" name="bairro" placeholder="Nome do bairro..." />
                     </div>
                     <div class="dadosHorizontais">
                         <div class="campoDados">
-                            <label for="cidadeInput">
-                                Cidade
-                            </label>
-                            <input id="cidadeInput" class="campoMaior" type="text" name="cidade" placeholder="Cidade..."></input>
+                            <label for="cidadeInput">Cidade</label>
+                            <input id="cidadeInput" class="campoMaior" type="text" name="cidade" placeholder="Cidade..." />
                         </div>
                         <div class="campoDados">
-                            <label for="estadoSelect">
-                                Estado
-                            </label>
+                            <label for="estadoSelect">Estado</label>
                             <select id="estadoSelect" name="estado" class="campoMenor">
                                 <option value="" disabled selected>Estado</option>
                                 <option value="AC">Acre</option>
@@ -135,20 +111,18 @@
 
             <!--============== Formas de Pagamento ==============-->
             <section class="formasPagamento">
-                <h2>
-                    Formas de pagamento
-                </h2>
+                <h2>Formas de pagamento</h2>
                 <article>
                     <div class="selecionarPagamento">
                         <fieldset>
                             <legend>À vista</legend>
                             <label class="opcaoPagamento">
-                                <input type="radio" name="pagamento" value="pix"></input>
+                                <input type="radio" name="pagamento" value="pix" />
                                 <div class="radioVisual"></div>
                                 Pix
                             </label>
                             <label class="opcaoPagamento">
-                                <input type="radio" name="pagamento" value="boleto"></input>
+                                <input type="radio" name="pagamento" value="boleto" />
                                 <div class="radioVisual"></div>
                                 Boleto
                             </label>
@@ -156,41 +130,33 @@
                         <fieldset>
                             <legend>Cartão</legend>
                             <label class="opcaoPagamento">
-                                <input type="radio" name="pagamento" value="credito"></input>
+                                <input type="radio" name="pagamento" value="credito" />
                                 <div class="radioVisual"></div>
                                 Crédito
                             </label>
                             <label class="opcaoPagamento">
-                                <input type="radio" name="pagamento" value="debito"></input>
+                                <input type="radio" name="pagamento" value="debito" />
                                 <div class="radioVisual"></div>
                                 Débito
                             </label>
                         </fieldset>
                     </div>
                     <div class="campoDados">
-                        <label for="nomeTitularInput">
-                            Nome do titular
-                        </label>
-                        <input id="nomeTitularInput" type="text" name="nome_titular" placeholder="Nome do titular..."></input>
+                        <label for="nomeTitularInput">Nome do titular</label>
+                        <input id="nomeTitularInput" type="text" name="nome_titular" placeholder="Nome do titular..." />
                     </div>
                     <div class="campoDados">
-                        <label for="numeroCartaoInput">
-                            Número do cartão
-                        </label>
-                        <input id="numeroCartaoInput" type="text" name="numero_cartao" placeholder="Número do cartão..."></input>
+                        <label for="numeroCartaoInput">Número do cartão</label>
+                        <input id="numeroCartaoInput" type="text" name="numero_cartao" placeholder="Número do cartão..." />
                     </div>
                     <div class="dadosHorizontais">
                         <div class="campoDados">
-                            <label for="dataValidadeInput">
-                                Data
-                            </label>
-                            <input id="dataValidadeInput" class="campoMaior" type="date" name="data_validade" placeholder="Data"></input>
+                            <label for="dataValidadeInput">Data</label>
+                            <input id="dataValidadeInput" class="campoMaior" type="date" name="data_validade" placeholder="Data" />
                         </div>
                         <div class="campoDados">
-                            <label for="cvvInput">
-                                Código de segurança
-                            </label>
-                            <input id="cvvInput" class="campoMenor" type="number" name="cvv" placeholder="CVV..."></input>
+                            <label for="cvvInput">Código de segurança</label>
+                            <input id="cvvInput" class="campoMenor" type="number" name="cvv" placeholder="CVV..." />
                         </div>
                     </div>
                 </article>
@@ -198,69 +164,44 @@
         </aside>
 
         <aside class="ladoDireito">
-
             <!--============== Resumo Pedido ==============-->
             <section class="resumoPedido">
-                <h2>
-                    Resumo do pedido
-                </h2>
+                <h2>Resumo do pedido</h2>
                 <article>
                     <div class="itemPedido">
-                        <img src="../Images/Produtos/mochila1_1.png" alt="Mochila Trilha 50 litros vermelha"></img>
+                        <img src="../Images/Produtos/mochila1_1.png" alt="Mochila Trilha 50 litros vermelha" />
                         <div class="infoItemPedido">
-                            <h3>
-                                Mochila Trilha 50 litros
-                            </h3>
-                            <p>
-                                R$ 650,00
-                            </p>
+                            <h3>Mochila Trilha 50 litros</h3>
+                            <p>R$ 650,00</p>
                         </div>
                     </div>
-                    <hr></hr>
+                    <hr />
                     <div class="itemPedido">
-                        <img src="../Images/Produtos/barraca1_1.png" alt="Barraca de camping"></img>
+                        <img src="../Images/Produtos/barraca1_1.png" alt="Barraca de camping" />
                         <div class="infoItemPedido">
-                            <h3>
-                                    Barraca de Camping Quechua 3 pessoas Mh100
-                            </h3>
-                            <p>
-                                R$ 400,00
-                            </p>
+                            <h3>Barraca de Camping Quechua 3 pessoas Mh100</h3>
+                            <p>R$ 400,00</p>
                         </div>
                     </div>
-                    <hr></hr>
+                    <hr />
                     <div class="itemPedido">
-                        <img src="../Images/Produtos/garrafa1_1.png" alt="Garrafa Térmica"></img>
+                        <img src="../Images/Produtos/garrafa1_1.png" alt="Garrafa Térmica" />
                         <div class="infoItemPedido">
-                            <h3>
-                                Garrafa de Trilha Isotérmica MH500 500ml
-                            </h3>
-                            <p>
-                                R$ 150,00
-                            </p>
+                            <h3>Garrafa de Trilha Isotérmica MH500 500ml</h3>
+                            <p>R$ 150,00</p>
                         </div>
                     </div>
-                    <hr></hr>
+                    <hr />
                     <div class="resumoPrecos">
-                        <h4>
-                            Subtotal
-                        </h4>
+                        <h4>Subtotal</h4>
                         <div>
-                            <p>
-                                Frete
-                            </p>
-                            <p>
-                                Grátis
-                            </p>
+                            <p>Frete</p>
+                            <p>Grátis</p>
                         </div>
                     </div>
-                    <hr></hr>
-                    <p class="precoTotal">
-                        R$ 1.200,00
-                    </p>
-                    <a href="finalizarCompra.html" class="botao botaoFinalizarPedido">
-                        Finalizar Compra
-                    </a>
+                    <hr />
+                    <p class="precoTotal">R$ 1.200,00</p>
+                    <a href="finalizarCompra.html" class="botao botaoFinalizarPedido">Finalizar Compra</a>
                 </article>
             </section>
         </aside>
@@ -270,36 +211,26 @@
     <footer>
         <div class="rodape">
             <figure>
-                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa"></img>
+                <img class="logoRodape" src="../Images/Logo-Icone.png" alt="Logo Icone da Empresa" />
             </figure>
             <article class="listaLinks">
-                <h3>
-                    Links
-                </h3>
+                <h3>Links</h3>
                 <a href="telaInicial.html">Tela Incial</a>
                 <a href="produtos.html">Produtos</a>
                 <a href="pedidos.html">Pedidos</a>
             </article>
             <article class="listaLinks">
-                <h3>
-                    Informações
-                </h3>
+                <h3>Informações</h3>
                 <a href="contato.html">Contato</a>
                 <a href="sobre-nos.html">Sobre nós</a>
             </article>
             <article class="maisInformacoes">
-                <h3>
-                    Mais informações
-                </h3>
-                <p>
-                    Informe seu e-mail para receber mais informações sobre ofertas.
-                </p>
+                <h3>Mais informações</h3>
+                <p>Informe seu e-mail para receber mais informações sobre ofertas.</p>
                 <form class="formRodape">
-                    <label for="emailInputFooter">
-                        E-mail:
-                    </label>
+                    <label for="emailInputFooter">E-mail:</label>
                     <div class="emailRodape">
-                        <input class="inputEmail" id="emailInputFooter" type="text" placeholder="E-mail..." required></input>
+                        <input class="inputEmail" id="emailInputFooter" type="text" placeholder="E-mail..." required />
                         <button class="botaoRodape">
                             <i class="bi bi-send"></i>
                         </button>
@@ -307,7 +238,7 @@
                 </form>
             </article>
         </div>
-        <hr></hr>
+        <hr />
         <p class="direitosReservados">
             © André Luis Sousa Dantas - Todos os direitos reservados
         </p>
